@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +12,33 @@
         .accordion-section {
             margin-bottom: 10px;
         }
+
         .accordion-content {
             display: none;
         }
+
         .accordion-header {
             cursor: pointer;
             background-color: #f1f1f1;
             padding: 10px;
             border: 1px solid #ccc;
         }
+
         #pdf-container {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             width: 50%;
             height: 100%;
         }
+
         #accordion-container {
             width: 50%;
             float: left;
         }
     </style>
 </head>
+
 <body>
     <div id="accordion-container">
         <div id="accordion"></div>
@@ -43,16 +49,16 @@
     </div>
 
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $.ajax({
                 url: "/data?csvFilePath=fullValues.csv",
                 method: "GET",
                 contentType: 'application/json'
-            }).done(function(data) {
+            }).done(function (data) {
                 var groupedData = {};
 
                 // Group data by section
-                data.forEach(function(item) {
+                data.forEach(function (item) {
                     if (!groupedData[item.section]) {
                         groupedData[item.section] = [];
                     }
@@ -67,12 +73,12 @@
                     var content = $('<div class="accordion-content"></div>');
 
                     var table = $('<table></table>');
-                    sectionData.forEach(function(item) {
+                    sectionData.forEach(function (item) {
                         var row = $('<tr></tr>');
                         row.append('<td>' + item.field + '</td>');
                         row.append('<td><input type="text" class="edit-value" value="' + item.value + '" data-field="' + item.field + '" data-section="' + item.section + '" /></td>');
-                        row.append('<td>' + item.notes + '</td>');
-                        row.append('<td>' + item.section + '</td>');
+                        //                   row.append('<td>' + item.notes + '</td>');
+                        //                   row.append('<td>' + item.section + '</td>');
                         table.append(row);
                     });
 
@@ -83,20 +89,22 @@
                 }
 
                 // Initialize accordion functionality
-                $('.accordion-header').on('click', function() {
+                $('.accordion-header').on('click', function () {
                     $(this).next('.accordion-content').slideToggle();
                 });
 
                 // Handle input change
-                $('#accordion').on('change', '.edit-value', function() {
+                $('#accordion').on('change', '.edit-value', function () {
                     var newValue = $(this).val();
                     var field = $(this).data('field');
                     var section = $(this).data('section');
+                    var notes = $(this).data('notes');
 
                     var updatedData = {
                         field: field,
                         value: newValue,
-                        section: section
+                        section: section,
+                        notes: notes
                     };
 
                     // Send updated data to the server
@@ -105,47 +113,62 @@
                         method: "POST",
                         contentType: 'application/json',
                         data: JSON.stringify(updatedData)
-                    }).done(function() {
+                    }).done(function () {
                         console.log('Data updated successfully');
                         // Generate new PDF and refresh the viewer
                         $.ajax({
                             url: "/pdf",
                             method: "POST",
                             contentType: 'application/json'
-                        }).done(function() {
+                        }).done(function () {
                             console.log('PDF updated successfully');
                             // Refresh the PDF viewer
+                            // var pdfObject = document.getElementById('pdf-object');
+                            // pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
+                            // Destroy and recreate the PDF object
+                            var pdfContainer = document.getElementById('pdf-container');
                             var pdfObject = document.getElementById('pdf-object');
-                            pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
-                        }).fail(function() {
+                            pdfContainer.removeChild(pdfObject);
+
+                            var newPdfObject = document.createElement('object');
+                            newPdfObject.id = 'pdf-object';
+                            newPdfObject.type = 'application/pdf';
+                            newPdfObject.width = '100%';
+                            newPdfObject.height = '100%';
+                            newPdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime(); // Update with the correct path
+
+                            pdfContainer.appendChild(newPdfObject);
+
+                        }).fail(function () {
                             console.log('Failed to update PDF');
                         });
-                    }).fail(function() {
+                    }).fail(function () {
                         console.log('Failed to update data');
                     });
                 });
 
                 // Handle update PDF button click
-                $('#update-pdf').on('click', function() {
+                $('#update-pdf').on('click', function () {
                     $.ajax({
                         url: "/pdf",
                         method: "POST",
                         contentType: 'application/json'
-                    }).done(function() {
+                    }).done(function () {
                         console.log('PDF updated successfully');
                         // Refresh the PDF viewer
                         var pdfObject = document.getElementById('pdf-object');
-                        pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
-                    }).fail(function() {
+                        pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
+                    }).fail(function () {
                         console.log('Failed to update PDF');
                     });
                 });
 
                 // Initial load of the PDF
                 var pdfObject = document.getElementById('pdf-object');
-                pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
+                pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
             });
         });
     </script>
 </body>
+
 </html>
