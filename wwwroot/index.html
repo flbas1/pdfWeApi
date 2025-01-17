@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
     <style>
         .accordion-section {
             margin-bottom: 10px;
@@ -32,10 +31,6 @@
             width: 50%;
             float: left;
         }
-        #pdf-canvas {
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 <body>
@@ -44,57 +39,10 @@
         <button id="update-pdf">Update PDF</button>
     </div>
     <div id="pdf-container">
-        <canvas id="pdf-canvas"></canvas>
+        <object id="pdf-object" type="application/pdf" width="100%" height="100%"></object>
     </div>
 
     <script>
-        var pdfDoc = null,
-            pageNum = 4,
-            pageRendering = false,
-            pageNumPending = null,
-            scale = 1.5,
-            canvas = document.getElementById('pdf-canvas'),
-            ctx = canvas.getContext('2d');
-
-        function renderPage(num) {
-            pageRendering = true;
-            pdfDoc.getPage(num).then(function(page) {
-                var viewport = page.getViewport({ scale: scale });
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                var renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport,
-                    renderInteractiveForms: true // Ensure annotations (form fields) are rendered
-                };
-                var renderTask = page.render(renderContext);
-
-                renderTask.promise.then(function() {
-                    pageRendering = false;
-                    if (pageNumPending !== null) {
-                        renderPage(pageNumPending);
-                        pageNumPending = null;
-                    }
-                });
-            });
-        }
-
-        function queueRenderPage(num) {
-            if (pageRendering) {
-                pageNumPending = num;
-            } else {
-                renderPage(num);
-            }
-        }
-
-        function loadPdf(url) {
-            pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-                pdfDoc = pdfDoc_;
-                renderPage(pageNum);
-            });
-        }
-
         $(document).ready(function() {
             $.ajax({
                 url: "/data?csvFilePath=fullValues.csv",
@@ -123,8 +71,8 @@
                         var row = $('<tr></tr>');
                         row.append('<td>' + item.field + '</td>');
                         row.append('<td><input type="text" class="edit-value" value="' + item.value + '" data-field="' + item.field + '" data-section="' + item.section + '" /></td>');
-                        // row.append('<td>' + item.notes + '</td>');
-                        // row.append('<td>' + item.section + '</td>');
+                        row.append('<td>' + item.notes + '</td>');
+                        row.append('<td>' + item.section + '</td>');
                         table.append(row);
                     });
 
@@ -159,6 +107,19 @@
                         data: JSON.stringify(updatedData)
                     }).done(function() {
                         console.log('Data updated successfully');
+                        // Generate new PDF and refresh the viewer
+                        $.ajax({
+                            url: "/pdf",
+                            method: "POST",
+                            contentType: 'application/json'
+                        }).done(function() {
+                            console.log('PDF updated successfully');
+                            // Refresh the PDF viewer
+                            var pdfObject = document.getElementById('pdf-object');
+                            pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
+                        }).fail(function() {
+                            console.log('Failed to update PDF');
+                        });
                     }).fail(function() {
                         console.log('Failed to update data');
                     });
@@ -172,20 +133,17 @@
                         contentType: 'application/json'
                     }).done(function() {
                         console.log('PDF updated successfully');
+                        // Refresh the PDF viewer
+                        var pdfObject = document.getElementById('pdf-object');
+                        pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
                     }).fail(function() {
                         console.log('Failed to update PDF');
                     });
                 });
 
-                // // Refresh the PDF every second
-                // setInterval(function() {
-                //     var currentPage = pageNum;
-                //     loadPdf('/902c10-21_filled.pdf?' + new Date().getTime());
-                //     pageNum = currentPage;
-                // }, 1000);
-
                 // Initial load of the PDF
-                loadPdf('/902c10-21_filled.pdf?' + new Date().getTime());
+                var pdfObject = document.getElementById('pdf-object');
+                pdfObject.data = '/902c10-21_filled.pdf#page=4?' + new Date().getTime();
             });
         });
     </script>

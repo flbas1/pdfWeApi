@@ -103,7 +103,7 @@ app.MapPost("/pdf", () =>
         fields[r.Field].SetValue(r.Value);
     }
 
-// form.FlattenFields();
+//  form.FlattenFields();
 
     // Close the document
     pdfDoc.Close();
@@ -111,6 +111,21 @@ app.MapPost("/pdf", () =>
 })
 .WithName("PostPdf");
 
+app.MapGet("/pdf/base64", async (HttpContext context) =>
+{
+    string pdfFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "902c10-21_filled.pdf");
+
+    if (!System.IO.File.Exists(pdfFilePath))
+    {
+        return Results.NotFound();
+    }
+
+    byte[] pdfBytes = await System.IO.File.ReadAllBytesAsync(pdfFilePath);
+    string base64String = Convert.ToBase64String(pdfBytes);
+
+    return Results.Ok(base64String);
+})
+.WithName("GetPdfBase64");
 
 app.Run();
 
