@@ -49,7 +49,7 @@
 
     <script>
         var pdfDoc = null,
-            pageNum = 1,
+            pageNum = 4,
             pageRendering = false,
             pageNumPending = null,
             scale = 1.5,
@@ -65,7 +65,8 @@
 
                 var renderContext = {
                     canvasContext: ctx,
-                    viewport: viewport
+                    viewport: viewport,
+                    renderInteractiveForms: true // Ensure annotations (form fields) are rendered
                 };
                 var renderTask = page.render(renderContext);
 
@@ -122,8 +123,8 @@
                         var row = $('<tr></tr>');
                         row.append('<td>' + item.field + '</td>');
                         row.append('<td><input type="text" class="edit-value" value="' + item.value + '" data-field="' + item.field + '" data-section="' + item.section + '" /></td>');
-                        row.append('<td>' + item.notes + '</td>');
-                        row.append('<td>' + item.section + '</td>');
+                        // row.append('<td>' + item.notes + '</td>');
+                        // row.append('<td>' + item.section + '</td>');
                         table.append(row);
                     });
 
@@ -176,7 +177,7 @@
                     });
                 });
 
-                // Refresh the PDF every second
+                // // Refresh the PDF every second
                 // setInterval(function() {
                 //     var currentPage = pageNum;
                 //     loadPdf('/902c10-21_filled.pdf?' + new Date().getTime());
@@ -184,7 +185,7 @@
                 // }, 1000);
 
                 // Initial load of the PDF
-                loadPdf('/902c10-21_filled.pdf');
+                loadPdf('/902c10-21_filled.pdf?' + new Date().getTime());
             });
         });
     </script>

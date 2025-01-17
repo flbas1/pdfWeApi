@@ -103,6 +103,8 @@ app.MapPost("/pdf", () =>
         fields[r.Field].SetValue(r.Value);
     }
 
+// form.FlattenFields();
+
     // Close the document
     pdfDoc.Close();
     return true;
