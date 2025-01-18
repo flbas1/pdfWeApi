@@ -89,9 +89,10 @@
                     sectionData.forEach(function (item) {
                         var row = $('<tr></tr>');
                         row.append('<td>' + item.field + '</td>');
-                        row.append('<td><input type="text" class="edit-value" value="' + item.value + '" data-field="' + item.field + '" data-section="' + item.section + '" /></td>');
+                        row.append('<td><input type="text" class="edit-value" value="' + item.value + '" data-field="' + item.field + '" data-section="' + item.section + '" data-pdfpage="' + item.pdfPage + '" /></td>');
                         //                   row.append('<td>' + item.notes + '</td>');
                         //                   row.append('<td>' + item.section + '</td>');
+                        //row.append('<td>' + item.pdfPage + '</td>');
                         table.append(row);
                     });
 
@@ -112,12 +113,14 @@
                     var field = $(this).data('field');
                     var section = $(this).data('section');
                     var notes = $(this).data('notes');
-
+                    var pdfPage = $(this).data('pdfpage');
+// console.log(pdfPage);
                     var updatedData = {
                         field: field,
                         value: newValue,
-                        section: section,
-                        notes: notes
+                        // section: section,
+                        // notes: notes,
+                        // pdfPage: pdfPage
                     };
 
                     // Send updated data to the server
@@ -154,8 +157,8 @@
                             newPdfObject.type = 'application/pdf';
                             newPdfObject.width = '100%';
                             newPdfObject.height = '100%';
-                            newPdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime(); // Update with the correct path
-
+                            newPdfObject.data = `/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime(); // Update with the correct path
+console.log ( `/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime());
                             pdfContainer.appendChild(newPdfObject);
 
                         }).fail(function () {
