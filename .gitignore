@@ -10,6 +10,8 @@
 *.userosscache
 *.sln.docstates
 .DS_Store
+wwwroot\*.pdf
+
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

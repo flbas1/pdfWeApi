@@ -36,7 +36,8 @@ app.MapGet("/data", (string csvFilePath) =>
     using (var reader = new StreamReader(csvFilePath))
     using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
     {
-        return csv.GetRecords<CsvDataModel>().ToList();
+        var retVal = csv.GetRecords<CsvDataModel>().ToList();
+        return retVal;
     }
 })
 .WithName("GetData");
@@ -61,7 +62,7 @@ app.MapPost("/data", async (HttpContext context) =>
     if (existingRecord != null)
     {
         existingRecord.Value = data.Value;
-        existingRecord.Notes = data.Notes;
+       // existingRecord.Notes = data.Notes;
     }
 
     using (var writer = new StreamWriter(csvFilePath))
