@@ -41,8 +41,14 @@
 
 <body>
     <div id="accordion-container">
+        <button class="ui-button ui-widget ui-corner-all" id="updatePdf">Update PDF</button>
+
+
+        <label for="autoUpdatePdf">AutoUpdate PDF</label>
+        <input type="checkbox" name="autoUpdatePdf" id="autoUpdatePdf" checked="checked" />
+
+        <br /><br />
         <div id="accordion"></div>
-        <button id="update-pdf">Update PDF</button>
     </div>
     <div id="pdf-container">
         <object id="pdf-object" type="application/pdf" width="100%" height="100%"></object>
@@ -50,6 +56,13 @@
 
     <script>
         $(document).ready(function () {
+
+            //setup topbar
+            $(function () {
+                $("#autoUpdatePdf").checkboxradio();
+                $("#updatePdf").button();
+            });
+
             $.ajax({
                 url: "/data?csvFilePath=fullValues.csv",
                 method: "GET",
@@ -115,6 +128,12 @@
                         data: JSON.stringify(updatedData)
                     }).done(function () {
                         console.log('Data updated successfully');
+
+                        autoUpdatePdf = $('#autoUpdatePdf').is(':checked');
+                        if (!autoUpdatePdf) {
+                            console.log("not autoUpdatePdf");
+                            return;
+                        }
                         // Generate new PDF and refresh the viewer
                         $.ajax({
                             url: "/pdf",
@@ -148,7 +167,7 @@
                 });
 
                 // Handle update PDF button click
-                $('#update-pdf').on('click', function () {
+                $('#updatePdf').on('click', function () {
                     $.ajax({
                         url: "/pdf",
                         method: "POST",
