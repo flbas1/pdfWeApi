@@ -24,8 +24,14 @@ if (app.Environment.IsDevelopment())
 // app.UseHttpsRedirection();  // to redirect to https
 
 app.UseDefaultFiles();  // Add this line to serve default files like index.html
-app.UseStaticFiles();// to serve static files
-
+app.UseStaticFiles(new StaticFileOptions()   // to serve static files
+{
+    OnPrepareResponse = context =>
+    {
+        context.Context.Response.Headers.Append("Cache-Control", "no-cache, no-store");
+        context.Context.Response.Headers.Append("Expires", "-1");
+    }
+});
 
 
 
@@ -89,7 +95,7 @@ app.MapPost("/pdf", () =>
     PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
 
     // Get all form fields
-    IDictionary<string, PdfFormField> fields = form.GetFormFields();
+    var fields = form.GetFormFields();
 
     // Read field values from CSV file
     var records = new List<CsvDataModel>();

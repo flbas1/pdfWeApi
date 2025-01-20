@@ -5,5 +5,6 @@ public class CsvDataModel
     public string Section { get; set; }
     public string Notes { get; set; }
     public string PdfPage { get; set; }
+    public string DataType {get;set;}
     // Add properties for each column in your CSV file
 }
