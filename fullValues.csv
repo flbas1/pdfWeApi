@@ -33,16 +33,16 @@ Address_2,,Section I. Income,3b - retired,5,text
 City State Zip code_2,,Section I. Income,3b - retired,5,text
 Telephone Number_2,,Section I. Income,3b - retired,5,text
 YEAR,???,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Your Income,0,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
+Your Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
 Other party's Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Monthly gross salary or wages,11666,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly gross salary or wages,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 "Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly disability benefits/SSI,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly Workers’ Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly Unemployment Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 "Monthly pension, retirement, or annuity payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly Social Security benefits,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,"=== From this case Monthly alimony actually received + From other case(s)Monthly alimony actually Received ",5,text
 From this case Monthly alimony actually received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 From other case(s)Monthly alimony actually Received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly interest and dividends,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
@@ -50,9 +50,9 @@ Monthly interest and dividends,0,Section I. Income,PRESENT MONTHLY GROSS INCOME:
 Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly gains derived from dealing in property (not including nonrecurring gains),0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Any other income of a recurring nature,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source1,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source 2,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-TOTAL PRESENT MONTHLY GROSS INCOME,11666,Section I. Income,~~~ needs to compute,5,text
+Source1,Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Source 2,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+TOTAL PRESENT MONTHLY GROSS INCOME,0,Section I. Income,"=== Monthly gross salary or wages  + Monthly bnusesommissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + Monthly alimony actually received (Add 9a and 9b)  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses  + Monthly gains derived from dealing in property (not including nonrecurring gains)  + Any other income of a recurring nature",5,text
 "Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
 a Filing Status,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
 b Number of dependents claimed,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
