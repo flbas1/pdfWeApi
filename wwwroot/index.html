@@ -240,7 +240,8 @@
                 if (notes && notes.startsWith('===')) {
                     var formula = notes.substring(3);
                     // var regex = /([^\+\s]+(?:\s+[^\+\s]+)*)|([\+\-])/g;  // works with + but not -
-                    var regex = /([^\+\-\s\(\)]+(?:\s+[^\+\-\s\(\)]+)*)|([\+\-])|(\((?:[^)(]+|\((?:[^)(]+|\([^)(]*\))*\))*\))/g; // works with + and - as long as you wrap words with - with () like  (Monthly time-sharing expenses)
+                    //var regex = /([^\+\-\s\(\)]+(?:\s+[^\+\-\s\(\)]+)*)|([\+\-])|(\((?:[^)(]+|\((?:[^)(]+|\([^)(]*\))*\))*\))/g; // works with + and - as long as you wrap words with - with () like  (Monthly time-sharing expenses)
+                    var regex = /([^\+\-\s\[\]]+(?:\s+[^\+\-\s\[\]]+)*)|([\+\-])|(\[[^\]]*\])/g; // works with + and - as long as you wrap words with - with [] like  [Monthly time-sharing expenses]
                     var matches = formula.match(regex);
 
                     if (matches) {
@@ -251,6 +252,8 @@
                             } else if (!isNaN(part)) { return part; }
                             else {
                                 var x = getValue(part) || 0;
+                                x=parseFloat(x);
+                                if (isNaN(x)) { x=0 }
                                 console.log(`${part}: ${x}`);
                                 return x;
                             }
@@ -273,11 +276,10 @@
 
                 function getValue(part) {
 
-                    if (part.startsWith('(') && part.endsWith(')')) {  //need to remove extra ( ) if it has it
+                    if (part.startsWith('[') && part.endsWith(']')) {  //need to remove extra ( ) if it has it
                         part = part.substring(1, part.length - 1);
                     }
-                        
-                    
+                                            
                     try {
                         return $('.edit-value').filter(function () {
                             var field = $(this).data('field');

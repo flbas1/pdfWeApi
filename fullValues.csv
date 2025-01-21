@@ -35,141 +35,141 @@ Telephone Number_2,,Section I. Income,3b - retired,5,text
 YEAR,???,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
 Your Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
 Other party's Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Monthly gross salary or wages,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly disability benefits/SSI,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Workers’ Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Unemployment Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly pension, retirement, or annuity payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Social Security benefits,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,=== From this case Monthly alimony actually received + (From other case(s)Monthly alimony actually Received),5,text
-From this case Monthly alimony actually received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-From other case(s)Monthly alimony actually Received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly interest and dividends,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly income from royalties, trusts, or estates",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly gains derived from dealing in property (not including nonrecurring gains),0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Any other income of a recurring nature,4000,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source1,Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source 2,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-TOTAL PRESENT MONTHLY GROSS INCOME,4000,Section I. Income,"=== Monthly gross salary or wages  + Monthly bonuses, commissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + (Monthly alimony actually received (Add 9a and 9b))  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + (Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses)  + (Monthly gains derived from dealing in property (not including nonrecurring gains))  + Any other income of a recurring nature",5,text
-"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-a Filing Status,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-b Number of dependents claimed,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly FICA or self-employment taxes,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly Medicare payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly mandatory union dues,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly mandatory retirement payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly health insurance payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly court-ordered child support actually paid for children from another relationship,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly court-ordered alimony actually paid (Add 25a and 25b),0,Section I. Income,=== 25a from this case + 25b from other cases,6,text
-25a from this case,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-25b from other cases,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-TOTAL DEDUCTIONS ALLOWABLE,0,Section I. Income,"=== (Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities))	+  a Filing Status	+ b Number of dependents claimed + (Monthly FICA or self-employment taxes) + Monthly Medicare payments + Monthly mandatory union dues + Monthly mandatory retirement payments + Monthly health insurance payments + (Monthly court-ordered child support actually paid for children from another relationship) + (Monthly court-ordered alimony actually paid (Add 25a and 25b))",6,text
-PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),-4000,Section I. Income,=== TOTAL DEDUCTIONS ALLOWABLE - TOTAL PRESENT MONTHLY GROSS INCOME,6,text
-Mortgage,,Section II. Average Monthly Expenses,,6,text
-PropertyTaxes,,Section II. Average Monthly Expenses,,6,text
-MonthlyInsurance,,Section II. Average Monthly Expenses,,6,text
-Monthly condominium maintenance fees and homeowner’s association fees,,Section II. Average Monthly Expenses,,6,text
-Monthly electricity,,Section II. Average Monthly Expenses,,6,text
-"Monthly water, garbage, and sewer",,Section II. Average Monthly Expenses,,6,text
-Monthly telephone,,Section II. Average Monthly Expenses,,6,text
-Monthly fuel oil or natural gas,,Section II. Average Monthly Expenses,,6,text
-Monthly repairs and maintenance,,Section II. Average Monthly Expenses,,6,text
-Monthly lawn care,,Section II. Average Monthly Expenses,,6,text
-Monthly pool maintenance,,Section II. Average Monthly Expenses,,6,text
-Monthly pest control,,Section II. Average Monthly Expenses,,6,text
-Monthly food and home supplies,,Section II. Average Monthly Expenses,,6,text
-Monthly meals outside home,,Section II. Average Monthly Expenses,,6,text
-Monthly alarm service contract,,Section II. Average Monthly Expenses,,6,text
-Monthly service contracts on appliances,,Section II. Average Monthly Expenses,,6,text
-Monthly maid service,,Section II. Average Monthly Expenses,,6,text
-Other Househose Expense1,,Section II. Average Monthly Expenses,,6,text
-Other Househose Expense2,,Section II. Average Monthly Expenses,,6,text
-Other Househose Expense3,,Section II. Average Monthly Expenses,,6,text
-Other Househose Expense4,,Section II. Average Monthly Expenses,,6,text
-Other Househose Expense5,,Section II. Average Monthly Expenses,,6,text
-Subtotal,0,Section II. Average Monthly Expenses,"=== Mortgage + PropertyTaxes + MonthlyInsurance + Monthly condominium maintenance fees and homeowner’s association fees + Monthly electricity + Monthly water, garbage, and sewer + Monthly telephone + Monthly fuel oil or natural gas + Monthly repairs and maintenance + Monthly lawn care + Monthly pool maintenance + Monthly pest control + Monthly food and home supplies + Monthly meals outside home + Monthly alarm service contract + Monthly service contracts on appliances + Monthly maid service + Other Househose Expense1 + Other Househose Expense2 + Other Househose Expense3 + Other Househose Expense4 + Other Househose Expense5",6,text
-Monthly gasoline and oil,,Section II. Average Monthly Expenses,,6,text
-Monthly repairs,,Section II. Average Monthly Expenses,,6,text
-Monthly auto tags and emission testing,,Section II. Average Monthly Expenses,,6,text
-Monthly insurance,,Section II. Average Monthly Expenses,,6,text
-Monthly payments (lease or financing),,Section II. Average Monthly Expenses,,6,text
-Monthly rental/replacements,,Section II. Average Monthly Expenses,,6,text
-Monthly tolls and parking,,Section II. Average Monthly Expenses,,6,text
-OtherAutomobile,,Section II. Average Monthly Expenses,,6,text
-IndicateOtherAutomobile,,Section II. Average Monthly Expenses,,6,text
-SubtotalAuto,,Section II. Average Monthly Expenses,,6,text
-"Monthly nursery, babysitting, or day care",,Section II. Average Monthly Expenses,,6,text
-Monthly school tuition,,Section II. Average Monthly Expenses,,6,text
-"Monthly school supplies, books, and fees",,Section II. Average Monthly Expenses,,6,text
-Monthly after school activities,,Section II. Average Monthly Expenses,,6,text
-Monthly lunch money,,Section II. Average Monthly Expenses,,6,text
-Monthly private lessons or tutoring,,Section II. Average Monthly Expenses,,6,text
-Monthly allowances,,Section II. Average Monthly Expenses,,6,text
-Monthly clothing and uniforms,,Section II. Average Monthly Expenses,,6,text
-Monthly health insurance,,Section II. Average Monthly Expenses,,6,text
-"Monthly medical, dental, prescriptions (nonreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-Monthly psychiatric/psychological/counselor,,Section II. Average Monthly Expenses,,6,text
-Monthly orthodontic,,Section II. Average Monthly Expenses,,6,text
-Monthly vitamins,,Section II. Average Monthly Expenses,,6,text
-Monthly beauty parlor/barber shop,,Section II. Average Monthly Expenses,,6,text
-Monthly nonprescription medication,,Section II. Average Monthly Expenses,,6,text
-"Monthly cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,6,text
-Monthly camp or summer activities,,Section II. Average Monthly Expenses,,6,text
-Monthly time-sharing expenses,,Section II. Average Monthly Expenses,,6,text
-Monthly miscellaneous,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 36 through 57),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-OtherExpensesForChildren1,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren2,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren3,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren4,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 59 through 62),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-Health insurance (if not listed on lines 23 or 45),,Section II. Average Monthly Expenses,,6,text
-Life insurance,,Section II. Average Monthly Expenses,,6,text
-Dental insurance,,Section II. Average Monthly Expenses,,6,text
-OtherMonthly1,,Section II. Average Monthly Expenses,,6,text
-OtherMonthly2,,Section II. Average Monthly Expenses,,6,text
-"SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65)",,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-Monthly dry cleaning and laundry,,Section II. Average Monthly Expenses,,6,text
-Monthly clothing,,Section II. Average Monthly Expenses,,6,text
-"Monthly psychiatric, psychological, or counselor (unreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-"Monthly non-prescription medications, cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,6,text
-Monthly grooming,,Section II. Average Monthly Expenses,,6,text
-Monthly gifts,,Section II. Average Monthly Expenses,,6,text
-Monthly pet expenses,,Section II. Average Monthly Expenses,,6,text
-Monthly club dues and membership,,Section II. Average Monthly Expenses,,6,text
-Monthly sports and hobbies,,Section II. Average Monthly Expenses,,6,text
-Monthly entertainment,,Section II. Average Monthly Expenses,,6,text
-Monthly health insurance payments,,Section II. Average Monthly Expenses,,6,text
-"Monthly medical, dental, and prescription (unreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-Monthly periodicals/books/tapes/CDs,,Section II. Average Monthly Expenses,,6,text
-Monthly vacations,,Section II. Average Monthly Expenses,,6,text
-Monthly religious organizations,,Section II. Average Monthly Expenses,,6,text
-Monthly bank charges/credit card fees,,Section II. Average Monthly Expenses,,6,text
-Monthly education expenses,,Section II. Average Monthly Expenses,,6,text
-Other: (include any usual and customary expenses not otherwise mentioned in the items,,Section II. Average Monthly Expenses,,6,text
-listed above1,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed2,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed3,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed4,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 70 through 89),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-MonthlyCreditors1,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors2,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors3,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors4,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors5,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors6,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors7,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors8,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors9,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors10,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors11,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors12,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors13,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 91 through 103),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-"TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-TOTAL MONTHLY EXPENSES (from line 105 above),,Section II. Average Monthly Expenses,~~~ needs to compute,9,text
+Monthly gross salary or wages,1,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",2,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly disability benefits/SSI,3,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Workers’ Compensation,4,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Unemployment Compensation,5,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly pension, retirement, or annuity payments",6,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Social Security benefits,7,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly alimony actually received (Add 9a and 9b),17,Section I. Income,=== From this case Monthly alimony actually received + [From other case(s)Monthly alimony actually Received],5,text
+From this case Monthly alimony actually received,8,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+From other case(s)Monthly alimony actually Received,9,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly interest and dividends,10,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly income from royalties, trusts, or estates",11,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,12,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly gains derived from dealing in property (not including nonrecurring gains),13,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Any other income of a recurring nature,14,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Source1,15 Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Source 2,16 dum dum duim,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+TOTAL PRESENT MONTHLY GROSS INCOME,136,Section I. Income,"=== Monthly gross salary or wages  + Monthly bonuses, commissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + [Monthly alimony actually received (Add 9a and 9b)]  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + [Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses]  + [Monthly gains derived from dealing in property (not including nonrecurring gains)]  + Any other income of a recurring nature + Source1 + Source 2",5,text
+"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",1,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+a Filing Status,2,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+b Number of dependents claimed,3,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+Monthly FICA or self-employment taxes,4,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+Monthly Medicare payments,5,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory union dues,6,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory retirement payments,7,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly health insurance payments,8,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered child support actually paid for children from another relationship,9,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered alimony actually paid (Add 25a and 25b),21,Section I. Income,=== 25a from this case + 25b from other cases,6,text
+25a from this case,10,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+25b from other cases,11,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+TOTAL DEDUCTIONS ALLOWABLE,66,Section I. Income,"=== [Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)] +  a Filing Status + b Number of dependents claimed + [Monthly FICA or self-employment taxes] + Monthly Medicare payments + Monthly mandatory union dues + Monthly mandatory retirement payments + Monthly health insurance payments + [Monthly court-ordered child support actually paid for children from another relationship] + [Monthly court-ordered alimony actually paid (Add 25a and 25b)]",6,text
+PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),-70,Section I. Income,=== TOTAL DEDUCTIONS ALLOWABLE - TOTAL PRESENT MONTHLY GROSS INCOME,6,text
+Mortgage,1,Section II. Average Monthly Expenses,,6,text
+PropertyTaxes,2,Section II. Average Monthly Expenses,,6,text
+MonthlyInsurance,3,Section II. Average Monthly Expenses,,6,text
+Monthly condominium maintenance fees and homeowner’s association fees,4,Section II. Average Monthly Expenses,,6,text
+Monthly electricity,5,Section II. Average Monthly Expenses,,6,text
+"Monthly water, garbage, and sewer",6,Section II. Average Monthly Expenses,,6,text
+Monthly telephone,7,Section II. Average Monthly Expenses,,6,text
+Monthly fuel oil or natural gas,8,Section II. Average Monthly Expenses,,6,text
+Monthly repairs and maintenance,9,Section II. Average Monthly Expenses,,6,text
+Monthly lawn care,10,Section II. Average Monthly Expenses,,6,text
+Monthly pool maintenance,11,Section II. Average Monthly Expenses,,6,text
+Monthly pest control,12,Section II. Average Monthly Expenses,,6,text
+Monthly food and home supplies,13,Section II. Average Monthly Expenses,,6,text
+Monthly meals outside home,14,Section II. Average Monthly Expenses,,6,text
+Monthly alarm service contract,15,Section II. Average Monthly Expenses,,6,text
+Monthly service contracts on appliances,16,Section II. Average Monthly Expenses,,6,text
+Monthly maid service,17,Section II. Average Monthly Expenses,,6,text
+Other Househose Expense1,18,Section II. Average Monthly Expenses,,6,text
+Other Househose Expense2,19,Section II. Average Monthly Expenses,,6,text
+Other Househose Expense3,20,Section II. Average Monthly Expenses,,6,text
+Other Househose Expense4,21,Section II. Average Monthly Expenses,,6,text
+Other Househose Expense5,22,Section II. Average Monthly Expenses,,6,text
+Subtotal,253,Section II. Average Monthly Expenses,"=== Mortgage + PropertyTaxes + MonthlyInsurance + Monthly condominium maintenance fees and homeowner’s association fees + Monthly electricity + Monthly water, garbage, and sewer + Monthly telephone + Monthly fuel oil or natural gas + Monthly repairs and maintenance + Monthly lawn care + Monthly pool maintenance + Monthly pest control + Monthly food and home supplies + Monthly meals outside home + Monthly alarm service contract + Monthly service contracts on appliances + Monthly maid service + Other Househose Expense1 + Other Househose Expense2 + Other Househose Expense3 + Other Househose Expense4 + Other Househose Expense5",6,text
+Monthly gasoline and oil,1,Section II. Average Monthly Expenses,,7,text
+Monthly repairs,2,Section II. Average Monthly Expenses,,7,text
+Monthly auto tags and emission testing,3,Section II. Average Monthly Expenses,,7,text
+Monthly insurance,4,Section II. Average Monthly Expenses,,7,text
+Monthly payments (lease or financing),5,Section II. Average Monthly Expenses,,7,text
+Monthly rental/replacements,6,Section II. Average Monthly Expenses,,7,text
+Monthly tolls and parking,7,Section II. Average Monthly Expenses,,7,text
+OtherAutomobile,8,Section II. Average Monthly Expenses,,7,text
+IndicateOtherAutomobile,busd,Section II. Average Monthly Expenses,,7,text
+SubtotalAuto,36,Section II. Average Monthly Expenses,=== Monthly gasoline and oil + Monthly repairs + Monthly auto tags and emission testing + Monthly insurance + [Monthly payments (lease or financing)] + Monthly rental/replacements + Monthly tolls and parking + OtherAutomobile + IndicateOtherAutomobile,7,text
+"Monthly nursery, babysitting, or day care",1,Section II. Average Monthly Expenses,,7,text
+Monthly school tuition,2,Section II. Average Monthly Expenses,,7,text
+"Monthly school supplies, books, and fees",3,Section II. Average Monthly Expenses,,7,text
+Monthly after school activities,4,Section II. Average Monthly Expenses,,7,text
+Monthly lunch money,5,Section II. Average Monthly Expenses,,7,text
+Monthly private lessons or tutoring,6,Section II. Average Monthly Expenses,,7,text
+Monthly allowances,7,Section II. Average Monthly Expenses,,7,text
+Monthly clothing and uniforms,8,Section II. Average Monthly Expenses,,7,text
+Monthly health insurance,9,Section II. Average Monthly Expenses,,7,text
+"Monthly medical, dental, prescriptions (nonreimbursed only)",10,Section II. Average Monthly Expenses,,7,text
+Monthly psychiatric/psychological/counselor,11,Section II. Average Monthly Expenses,,7,text
+Monthly orthodontic,12,Section II. Average Monthly Expenses,,7,text
+Monthly vitamins,13,Section II. Average Monthly Expenses,,7,text
+Monthly beauty parlor/barber shop,14,Section II. Average Monthly Expenses,,7,text
+Monthly nonprescription medication,15,Section II. Average Monthly Expenses,,7,text
+"Monthly cosmetics, toiletries, and sundries",16,Section II. Average Monthly Expenses,,7,text
+Monthly camp or summer activities,17,Section II. Average Monthly Expenses,,7,text
+Monthly time-sharing expenses,18,Section II. Average Monthly Expenses,,7,text
+Monthly miscellaneous,19,Section II. Average Monthly Expenses,,7,text
+SUBTOTAL (add lines 36 through 57),190,Section II. Average Monthly Expenses,"=== Monthly nursery, babysitting, or day care + Monthly school tuition + Monthly school supplies, books, and fees + Monthly after school activities + Monthly lunch money +Monthly private lessons or tutoring + Monthly allowances + Monthly clothing and uniforms + Monthly health insurance + [Monthly medical, dental, prescriptions (nonreimbursed only)] + Monthly psychiatric/psychological/counselor + Monthly orthodontic + Monthly vitamins + Monthly beauty parlor/barber shop + Monthly nonprescription medication + Monthly cosmetics, toiletries, and sundries + Monthly camp or summer activities + [Monthly time-sharing expenses] + Monthly miscellaneous",7,text
+OtherExpensesForChildren1,1,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren2,2,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren3,3,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren4,4,Section II. Average Monthly Expenses,,7,text
+SUBTOTAL (add lines 59 through 62),10,Section II. Average Monthly Expenses,=== OtherExpensesForChildren1 + OtherExpensesForChildren2 + OtherExpensesForChildren3 + OtherExpensesForChildren4,7,text
+Health insurance (if not listed on lines 23 or 45),1,Section II. Average Monthly Expenses,,8,text
+Life insurance,2,Section II. Average Monthly Expenses,,8,text
+Dental insurance,3,Section II. Average Monthly Expenses,,8,text
+OtherMonthly1,4,Section II. Average Monthly Expenses,,8,text
+OtherMonthly2,5,Section II. Average Monthly Expenses,,8,text
+"SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65)",12,Section II. Average Monthly Expenses,=== Dental insurance + OtherMonthly1 + OtherMonthly2,8,text
+Monthly dry cleaning and laundry,1,Section II. Average Monthly Expenses,,8,text
+Monthly clothing,2,Section II. Average Monthly Expenses,,8,text
+"Monthly psychiatric, psychological, or counselor (unreimbursed only)",3,Section II. Average Monthly Expenses,,8,text
+"Monthly non-prescription medications, cosmetics, toiletries, and sundries",4,Section II. Average Monthly Expenses,,8,text
+Monthly grooming,5,Section II. Average Monthly Expenses,,8,text
+Monthly gifts,6,Section II. Average Monthly Expenses,,8,text
+Monthly pet expenses,7,Section II. Average Monthly Expenses,,8,text
+Monthly club dues and membership,8,Section II. Average Monthly Expenses,,8,text
+Monthly sports and hobbies,9,Section II. Average Monthly Expenses,,8,text
+Monthly entertainment,10,Section II. Average Monthly Expenses,,8,text
+"Monthly medical, dental, and prescription (unreimbursed only)",12,Section II. Average Monthly Expenses,,8,text
+Monthly periodicals/books/tapes/CDs,13,Section II. Average Monthly Expenses,,8,text
+Monthly vacations,14,Section II. Average Monthly Expenses,,8,text
+Monthly religious organizations,15,Section II. Average Monthly Expenses,,8,text
+Monthly bank charges/credit card fees,16,Section II. Average Monthly Expenses,,8,text
+Monthly education expenses,17,Section II. Average Monthly Expenses,,8,text
+Other: (include any usual and customary expenses not otherwise mentioned in the items,18,Section II. Average Monthly Expenses,,8,text
+listed above1,19,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed2,20,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed3,21,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed4,22,Section II. Average Monthly Expenses,,8,text
+SUBTOTAL (add lines 70 through 89),242,Section II. Average Monthly Expenses,"=== Monthly dry cleaning and laundry + Monthly clothing + [Monthly psychiatric, psychological, or counselor (unreimbursed only)] + [Monthly non-prescription medications, cosmetics, toiletries, and sundries] + Monthly grooming + Monthly gifts + Monthly pet expenses + Monthly club dues and membership + Monthly sports and hobbies + Monthly entertainment + [Monthly medical, dental, and prescription (unreimbursed only)] + Monthly periodicals/books/tapes/CDs + Monthly vacations + Monthly religious organizations + Monthly bank charges/credit card fees + Monthly education expenses + [Other: (include any usual and customary expenses not otherwise mentioned in the items] + listed above1 + OtherMonthlyNotListed2 + OtherMonthlyNotListed3 + OtherMonthlyNotListed4",8,text
+MonthlyCreditors1,1 bank,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors2,2 credit card,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors3,3.33 gift,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors4,4.44 gift,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors5,5,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors6,6,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors7,7,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors8,8,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors9,9,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors10,10,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors11,11,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors12,12,Section II. Average Monthly Expenses,,9,text
+MonthlyCreditors13,13,Section II. Average Monthly Expenses,,9,text
+SUBTOTAL (add lines 91 through 103),91.77,Section II. Average Monthly Expenses,=== MonthlyCreditors1 + MonthlyCreditors2 + MonthlyCreditors3 + MonthlyCreditors4 + MonthlyCreditors5 + MonthlyCreditors6 + MonthlyCreditors7 + MonthlyCreditors8 + MonthlyCreditors9 + MonthlyCreditors10 + MonthlyCreditors11 + MonthlyCreditors12 + MonthlyCreditors13,9,text
+"TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",834.77,Section II. Average Monthly Expenses,"=== Subtotal + SubtotalAuto + SUBTOTAL (add lines 36 through 57) + SUBTOTAL (add lines 59 through 62) + SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65) + SUBTOTAL (add lines 70 through 89) + SUBTOTAL (add lines 91 through 103)",9,text
+TOTAL PRESENT MONTHLY NET INCOME (from line 27 of SECTION I. INCOME),-70,Section II. Average Monthly Expenses,=== PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),9,text
+TOTAL MONTHLY EXPENSES (from line 105 above),834.77,Section II. Average Monthly Expenses,"=== TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",9,text
 Check Box11,,Section III.  Assets and Liabilities,,9,checkbox
 Cash (on hand),,Section III.  Assets and Liabilities,,9,text
 Current fair market value1,,Section III.  Assets and Liabilities,,9,text
