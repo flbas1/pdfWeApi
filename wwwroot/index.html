@@ -91,6 +91,7 @@
                         row.append('<td>' + item.field + '</td>');
 
                         checked = (item.dataType === "checkbox" && item.value === 'Yes') ? 'checked' : '';
+                        readOnly = (!item.notes.startsWith('===')) ? '' : `readonly  data-notes="${item.notes}" `;
 
                         row.append(`
                             <td>
@@ -102,10 +103,11 @@
                                     data-section="${item.section}" 
                                     data-pdfpage="${item.pdfPage}" 
                                     ${checked}
+                                    ${readOnly}
                                 />
                             </td>
                         `);
-                         table.append(row);
+                        table.append(row);
                     });
 
                     content.append(table);
@@ -133,67 +135,33 @@
                     if (dataType === 'checkbox') {
                         newValue = $(this).is(":checked") ? 'Yes' : 'Off';
                     }
-                    console.log(`${field} --- ${newValue}`);
 
+                    ComputeValues();//recompute all of sheet
+
+                    console.log(`${field} --- ${newValue}`);
 
                     var updatedData = {
                         field: field,
                         value: newValue,
-                        // section: section,
-                        // notes: notes,
-                        // pdfPage: pdfPage
                     };
 
+                    UpdateCsvValue(field, newValue);
 
+                    // // Send updated data to the server
+                    // $.ajax({
+                    //     url: "/data?csvFilePath=fullValues.csv",
+                    //     method: "POST",
+                    //     contentType: 'application/json',
+                    //     data: JSON.stringify(updatedData)
+                    // }).done(function () {
+                    //     console.log('Data updated successfully');
 
-                    // Send updated data to the server
-                    $.ajax({
-                        url: "/data?csvFilePath=fullValues.csv",
-                        method: "POST",
-                        contentType: 'application/json',
-                        data: JSON.stringify(updatedData)
-                    }).done(function () {
-                        console.log('Data updated successfully');
-
-                        autoUpdatePdf = $('#autoUpdatePdf').is(':checked');
-                        if (!autoUpdatePdf) {
-                            console.log("not autoUpdatePdf");
-                            return;
-                        }
-                        // Generate new PDF and refresh the viewer
-                        $.ajax({
-                            url: "/pdf",
-                            method: "POST",
-                            contentType: 'application/json'
-                        }).done(function () {
-                            console.log('PDF updated successfully');
-                            // Refresh the PDF viewer
-                            // var pdfObject = document.getElementById('pdf-object');
-                            // pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
-                            // Destroy and recreate the PDF object
-                            var pdfContainer = document.getElementById('pdf-container');
-                            var pdfObject = document.getElementById('pdf-object');
-                            pdfContainer.removeChild(pdfObject);
-
-                            var newPdfObject = document.createElement('object');
-                            newPdfObject.id = 'pdf-object';
-                            newPdfObject.type = 'application/pdf';
-                            newPdfObject.width = '100%';
-                            newPdfObject.height = '100%';
-                            newPdfObject.data = `/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime(); // Update with the correct path
-                            console.log(`/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime());
-                            pdfContainer.appendChild(newPdfObject);
-
-                        }).fail(function () {
-                            console.log('Failed to update PDF');
-                        });
-                    }).fail(function () {
-                        console.log('Failed to update data');
-                    });
-                });
-
-                // Handle update PDF button click
-                $('#updatePdf').on('click', function () {
+                    autoUpdatePdf = $('#autoUpdatePdf').is(':checked');
+                    if (!autoUpdatePdf) {
+                        console.log("not autoUpdatePdf");
+                        return;
+                    }
+                    // Generate new PDF and refresh the viewer
                     $.ajax({
                         url: "/pdf",
                         method: "POST",
@@ -201,18 +169,159 @@
                     }).done(function () {
                         console.log('PDF updated successfully');
                         // Refresh the PDF viewer
+                        // var pdfObject = document.getElementById('pdf-object');
+                        // pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
+                        // Destroy and recreate the PDF object
+                        var pdfContainer = document.getElementById('pdf-container');
                         var pdfObject = document.getElementById('pdf-object');
-                        pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
+                        pdfContainer.removeChild(pdfObject);
+
+                        var newPdfObject = document.createElement('object');
+                        newPdfObject.id = 'pdf-object';
+                        newPdfObject.type = 'application/pdf';
+                        newPdfObject.width = '100%';
+                        newPdfObject.height = '100%';
+                        newPdfObject.data = `/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime(); // Update with the correct path
+                        console.log(`/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime());
+                        pdfContainer.appendChild(newPdfObject);
+
                     }).fail(function () {
                         console.log('Failed to update PDF');
                     });
+                }).fail(function () {
+                    console.log('Failed to update data');
                 });
-
-                // Initial load of the PDF
-                var pdfObject = document.getElementById('pdf-object');
-                pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
             });
+
+            // Handle update PDF button click
+            $('#updatePdf').on('click', function () {
+                $.ajax({
+                    url: "/pdf",
+                    method: "POST",
+                    contentType: 'application/json'
+                }).done(function () {
+                    console.log('PDF updated successfully');
+                    // Refresh the PDF viewer
+                    var pdfObject = document.getElementById('pdf-object');
+                    pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
+                }).fail(function () {
+                    console.log('Failed to update PDF');
+                });
+            });
+
+            // Initial load of the PDF
+            var pdfObject = document.getElementById('pdf-object');
+            pdfObject.data = '/902c10-21_filled.pdf#page=4?t=' + new Date().getTime();
         });
+        // });
+
+        function UpdateCsvValue(field, value) {
+            var updatedData = {
+                field: field,
+                value: '' + value
+            };
+
+            // Send updated data to the server
+            $.ajax({
+                url: "/data?csvFilePath=fullValues.csv",
+                method: "POST",
+                contentType: 'application/json',
+                data: JSON.stringify(updatedData)
+            }).done(function () {
+                console.log('Data updated successfully');
+            }).fail(function () {
+                console.log('Failed to update data');
+            });
+        }
+
+
+        function ComputeValues() {
+
+            $('.edit-value').each(function () {
+                var notes = $(this).data('notes');
+                if (notes && notes.startsWith('===')) {
+                    var formula = notes.substring(3);
+                    var regex = /([^\+\s]+(?:\s+[^\+\s]+)*)|([\+\-])/g;
+                    var matches = formula.match(regex);
+
+                    if (matches) {
+                        var evaluatedFormula = matches.map(function (part) {
+                            part = part.trim();
+                            if (part === '+' || part === '-') {
+                                return part;
+                            } else if (!isNaN(part)) { return part; }
+                            else {
+                                var x = getValue(part) || 0;
+                                console.log(`${part}: ${x}`);
+                                return x;
+                            }
+                        }).join(' ');
+
+                        try {
+                            console.log(evaluatedFormula);
+                            var calculatedValue = eval(evaluatedFormula);
+                            $(this).val(calculatedValue);
+                            UpdateCsvValue($(this).data('field'), calculatedValue);
+                            //fieldValues[$(this).data('field')] = calculatedValue;
+                        } catch (e) {
+                            console.error('Error evaluating formula:', evaluatedFormula, e);
+                        }
+                    } else {
+                        console.error('Invalid formula:', formula);
+                    }
+                }
+
+
+                function getValue(part) {
+                    try {
+                        return $('.edit-value').filter(function () {
+                            var field = $(this).data('field');
+                            return field && field == part
+                        })[0].value
+
+                    } catch (e) { console.log(e); }
+                }
+
+            });
+
+
+            //             //1.  find all formulas
+            //             var calculations = $('.edit-value').filter(function () {
+            //                 var notes = $(this).data('notes');
+            //                 return notes && notes.startsWith('===');
+            //             });
+
+            //             //2.  compute all formulas
+            // calculations.forEach(function (calculation) {
+            //     //1.  get the formula
+            // var formula = calculation.dataset.notes.substring(3)
+            // var regex = /([^\+\-]+)|([\+\-])/g;
+            // var matches = formula.match(regex);
+            // if (matches) {
+            //                 var evaluatedFormula = matches.map(function(part) {
+            //                     part = part.trim();
+            //                     if (part === '+' || part === '-') {
+            //                         return part;
+            //                     } else {
+            //                         return fieldValues[part] || 0;
+            //                     }
+            //                 }).join(' ');
+
+
+            //     //2.  get the fields
+            //     $('.edit-value').filter(function() {
+            //     var field = $(this).data('field');
+            //     return field  && field==='From this case Monthly alimony actually received'
+            // })[0].attributes['value']
+
+
+            // });
+
+
+
+            //4.  return true
+            return true;
+        }
     </script>
 </body>
 

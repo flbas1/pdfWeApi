@@ -3,6 +3,7 @@ using CsvHelper;
 using iText.Forms;
 using iText.Forms.Fields;
 using iText.Kernel.Pdf;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,15 +11,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();
+    app.MapScalarApiReference(options => {
+        options
+        .WithTitle ( "Scalar API Reference")
+        .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
+        .WithDefaultHttpClient(ScalarTarget.JavaScript, ScalarClient.JQuery);
+    });
 }
 
 // app.UseHttpsRedirection();  // to redirect to https
@@ -48,6 +54,7 @@ app.MapGet("/data", (string csvFilePath) =>
 })
 .WithName("GetData");
 
+var csvLock = new object();
 app.MapPost("/data", async (HttpContext context) =>
 {
     var csvFilePath = context.Request.Query["csvFilePath"].ToString();
@@ -57,6 +64,8 @@ app.MapPost("/data", async (HttpContext context) =>
 
     var config = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture) { HasHeaderRecord = true, Delimiter = "," };
 
+ lock (csvLock)
+    {
     var records = new List<CsvDataModel>();
     using (var reader = new StreamReader(csvFilePath))
     using (var csv = new CsvReader(reader, config))
@@ -68,7 +77,6 @@ app.MapPost("/data", async (HttpContext context) =>
     if (existingRecord != null)
     {
         existingRecord.Value = data.Value;
-       // existingRecord.Notes = data.Notes;
     }
 
     using (var writer = new StreamWriter(csvFilePath))
@@ -77,6 +85,7 @@ app.MapPost("/data", async (HttpContext context) =>
         csv.WriteRecords(records);
     }
     return Results.Ok(true);
+    }
 })
 .WithName("PostData");
 
