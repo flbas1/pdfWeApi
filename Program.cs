@@ -19,9 +19,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.MapScalarApiReference(options => {
+    app.MapScalarApiReference(options =>
+    {
         options
-        .WithTitle ( "Scalar API Reference")
+        .WithTitle("Scalar API Reference")
         .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
         .WithDefaultHttpClient(ScalarTarget.JavaScript, ScalarClient.JQuery);
     });
@@ -64,27 +65,27 @@ app.MapPost("/data", async (HttpContext context) =>
 
     var config = new CsvHelper.Configuration.CsvConfiguration(CultureInfo.InvariantCulture) { HasHeaderRecord = true, Delimiter = "," };
 
- lock (csvLock)
+    lock (csvLock)
     {
-    var records = new List<CsvDataModel>();
-    using (var reader = new StreamReader(csvFilePath))
-    using (var csv = new CsvReader(reader, config))
-    {
-        records = csv.GetRecords<CsvDataModel>().ToList();
-    }
+        var records = new List<CsvDataModel>();
+        using (var reader = new StreamReader(csvFilePath))
+        using (var csv = new CsvReader(reader, config))
+        {
+            records = csv.GetRecords<CsvDataModel>().ToList();
+        }
 
-    var existingRecord = records.FirstOrDefault(r => r.Field == data.Field);
-    if (existingRecord != null)
-    {
-        existingRecord.Value = data.Value;
-    }
+        var existingRecord = records.FirstOrDefault(r => r.Field == data.Field);
+        if (existingRecord != null)
+        {
+            existingRecord.Value = data.Value;
+        }
 
-    using (var writer = new StreamWriter(csvFilePath))
-    using (var csv = new CsvWriter(writer, config))
-    {
-        csv.WriteRecords(records);
-    }
-    return Results.Ok(true);
+        using (var writer = new StreamWriter(csvFilePath))
+        using (var csv = new CsvWriter(writer, config))
+        {
+            csv.WriteRecords(records);
+        }
+        return Results.Ok(true);
     }
 })
 .WithName("PostData");
@@ -116,10 +117,13 @@ app.MapPost("/pdf", () =>
 
     foreach (var r in records)
     {
-        fields[r.Field].SetValue(r.Value);
+        if (fields.ContainsKey(r.Field))  // sometimes a field needs to be there ... but the PDF is wrong ... like for a calculation
+        {
+            fields[r.Field].SetValue(r.Value);
+        }
     }
 
-//  form.FlattenFields();
+    //  form.FlattenFields();
 
     // Close the document
     pdfDoc.Close();

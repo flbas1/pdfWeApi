@@ -42,7 +42,7 @@ Monthly Workers’ Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME
 Monthly Unemployment Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 "Monthly pension, retirement, or annuity payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly Social Security benefits,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,"=== From this case Monthly alimony actually received + From other case(s)Monthly alimony actually Received ",5,text
+Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,=== From this case Monthly alimony actually received + (From other case(s)Monthly alimony actually Received),5,text
 From this case Monthly alimony actually received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 From other case(s)Monthly alimony actually Received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Monthly interest and dividends,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
@@ -52,20 +52,21 @@ Monthly gains derived from dealing in property (not including nonrecurring gains
 Any other income of a recurring nature,4000,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Source1,Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
 Source 2,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-TOTAL PRESENT MONTHLY GROSS INCOME,4000,Section I. Income,"=== Monthly gross salary or wages  + Monthly bnusesommissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + Monthly alimony actually received (Add 9a and 9b)  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses  + Monthly gains derived from dealing in property (not including nonrecurring gains)  + Any other income of a recurring nature",5,text
-"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-a Filing Status,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-b Number of dependents claimed,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly FICA or self-employment taxes,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly Medicare payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly mandatory union dues,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly mandatory retirement payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly health insurance payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly court-ordered child support actually paid for children from another relationship,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly court-ordered alimony actually paid (Add 25a and 25b),,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-25a from this case,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-25b from other cases,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),0,Section I. Income,~~~ needs to compute,5,text
+TOTAL PRESENT MONTHLY GROSS INCOME,4000,Section I. Income,"=== Monthly gross salary or wages  + Monthly bonuses, commissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + (Monthly alimony actually received (Add 9a and 9b))  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + (Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses)  + (Monthly gains derived from dealing in property (not including nonrecurring gains))  + Any other income of a recurring nature",5,text
+"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+a Filing Status,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+b Number of dependents claimed,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+Monthly FICA or self-employment taxes,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
+Monthly Medicare payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory union dues,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory retirement payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly health insurance payments,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered child support actually paid for children from another relationship,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered alimony actually paid (Add 25a and 25b),0,Section I. Income,=== 25a from this case + 25b from other cases,6,text
+25a from this case,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+25b from other cases,0,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+TOTAL DEDUCTIONS ALLOWABLE,0,Section I. Income,"=== (Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities))	+  a Filing Status	+ b Number of dependents claimed + (Monthly FICA or self-employment taxes) + Monthly Medicare payments + Monthly mandatory union dues + Monthly mandatory retirement payments + Monthly health insurance payments + (Monthly court-ordered child support actually paid for children from another relationship) + (Monthly court-ordered alimony actually paid (Add 25a and 25b))",6,text
+PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),-4000,Section I. Income,=== TOTAL DEDUCTIONS ALLOWABLE - TOTAL PRESENT MONTHLY GROSS INCOME,6,text
 Mortgage,,Section II. Average Monthly Expenses,,6,text
 PropertyTaxes,,Section II. Average Monthly Expenses,,6,text
 MonthlyInsurance,,Section II. Average Monthly Expenses,,6,text

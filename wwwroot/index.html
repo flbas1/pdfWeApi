@@ -188,9 +188,7 @@
                     }).fail(function () {
                         console.log('Failed to update PDF');
                     });
-                }).fail(function () {
-                    console.log('Failed to update data');
-                });
+                })
             });
 
             // Handle update PDF button click
@@ -241,7 +239,8 @@
                 var notes = $(this).data('notes');
                 if (notes && notes.startsWith('===')) {
                     var formula = notes.substring(3);
-                    var regex = /([^\+\s]+(?:\s+[^\+\s]+)*)|([\+\-])/g;
+                    // var regex = /([^\+\s]+(?:\s+[^\+\s]+)*)|([\+\-])/g;  // works with + but not -
+                    var regex = /([^\+\-\s\(\)]+(?:\s+[^\+\-\s\(\)]+)*)|([\+\-])|(\((?:[^)(]+|\((?:[^)(]+|\([^)(]*\))*\))*\))/g; // works with + and - as long as you wrap words with - with () like  (Monthly time-sharing expenses)
                     var matches = formula.match(regex);
 
                     if (matches) {
@@ -273,54 +272,26 @@
 
 
                 function getValue(part) {
+
+                    if (part.startsWith('(') && part.endsWith(')')) {  //need to remove extra ( ) if it has it
+                        part = part.substring(1, part.length - 1);
+                    }
+                        
+                    
                     try {
                         return $('.edit-value').filter(function () {
                             var field = $(this).data('field');
                             return field && field == part
                         })[0].value
 
-                    } catch (e) { console.log(e); }
+                    } catch (e) {
+                        console.error('Error getting value:', part, e);
+                        alert(part);
+                    }
                 }
 
             });
-
-
-            //             //1.  find all formulas
-            //             var calculations = $('.edit-value').filter(function () {
-            //                 var notes = $(this).data('notes');
-            //                 return notes && notes.startsWith('===');
-            //             });
-
-            //             //2.  compute all formulas
-            // calculations.forEach(function (calculation) {
-            //     //1.  get the formula
-            // var formula = calculation.dataset.notes.substring(3)
-            // var regex = /([^\+\-]+)|([\+\-])/g;
-            // var matches = formula.match(regex);
-            // if (matches) {
-            //                 var evaluatedFormula = matches.map(function(part) {
-            //                     part = part.trim();
-            //                     if (part === '+' || part === '-') {
-            //                         return part;
-            //                     } else {
-            //                         return fieldValues[part] || 0;
-            //                     }
-            //                 }).join(' ');
-
-
-            //     //2.  get the fields
-            //     $('.edit-value').filter(function() {
-            //     var field = $(this).data('field');
-            //     return field  && field==='From this case Monthly alimony actually received'
-            // })[0].attributes['value']
-
-
-            // });
-
-
-
-            //4.  return true
-            return true;
+           return true;
         }
     </script>
 </body>
