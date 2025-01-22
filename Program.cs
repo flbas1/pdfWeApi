@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Globalization;
+using System.Text;
 using CsvHelper;
 using iText.Forms;
 using iText.Forms.Fields;
@@ -146,6 +148,54 @@ app.MapGet("/pdf/base64", async (HttpContext context) =>
     return Results.Ok(base64String);
 })
 .WithName("GetPdfBase64");
+
+app.MapPost("/renameFields", () =>
+{
+    string pdfTemplate = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "902c10-21_filled.pdf");
+    string outputFilePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "902c10-21_filled_renamed.pdf");
+
+    // Open the existing PDF
+    PdfDocument pdfDoc = new PdfDocument(new PdfReader(pdfTemplate), new PdfWriter(outputFilePath));
+    PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
+
+    // Rename unnamed textboxes
+    var fieldNames = form.GetFormFields();
+    int unnamedCounter = 1;
+    foreach (var field in fieldNames)
+    {
+        if (string.IsNullOrEmpty(field.Key))
+        {
+            string newFieldName = "UnnamedField" + unnamedCounter++;
+            PdfFormField formField = field.Value;
+            formField.SetFieldName(newFieldName);
+        }
+    }
+
+    // Close the document
+    pdfDoc.Close();
+
+    return Results.Ok("Fields renamed successfully");
+})
+.WithName("RenameFields");
+
+app.MapGet("/pdf/Fields", () =>
+{
+    string pdfTemplate = Path.Combine(Directory.GetCurrentDirectory(),  "902c10-21.pdf");
+    PdfDocument pdfDoc = new PdfDocument(new PdfReader(pdfTemplate));
+    PdfAcroForm form = PdfAcroForm.GetAcroForm(pdfDoc, true);
+
+    var fieldNames = new List<string>();
+    foreach (var field in form.GetFormFields())
+    {
+        fieldNames.Add(field.Key);
+    }
+
+    pdfDoc.Close();
+
+    return Results.Json(fieldNames);
+})
+.WithName("GetPdfFields");
+
 
 app.Run();
 
