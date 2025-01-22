@@ -8,7 +8,7 @@ county,BROWARD,Heading,,4,text
 full legal name,CHRISTOPHER STEWART,Heading,,4,text
 AGE,55,Section I. Income,,4,text
 Occupation,Unemployed,Section I. Income,,4,text
-Check Box85,Off,Section I. Income,Unemployment,4,checkbox
+Check Box85,Yes,Section I. Income,Unemployment,4,checkbox
 you expect to receive 1,"seeking unemployment benefits, and seeking employment",Section I. Income,,4,text
 you expect to receive 2,"I expect to be employed within the next 3 months, with a pay of $120k, based on feedback I am receiving from other job seekers recent laid off",Section I. Income,,4,text
 Check Box86,Off,Section I. Income,,4,checkbox
@@ -33,54 +33,56 @@ Address_2,,Section I. Income,3b - retired,5,text
 City State Zip code_2,,Section I. Income,3b - retired,5,text
 Telephone Number_2,,Section I. Income,3b - retired,5,text
 YEAR,???,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Your Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
+Your Income,0,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
 Other party's Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Monthly gross salary or wages,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly disability benefits/SSI,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Workers’ Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Unemployment Compensation,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly pension, retirement, or annuity payments",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Social Security benefits,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,"=== From this case Monthly alimony actually received + From other case(s)Monthly alimony actually Received ",5,text
-From this case Monthly alimony actually received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-From other case(s)Monthly alimony actually Received,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly interest and dividends,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly income from royalties, trusts, or estates",0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly gains derived from dealing in property (not including nonrecurring gains),0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Any other income of a recurring nature,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source1,Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source 2,0,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-TOTAL PRESENT MONTHLY GROSS INCOME,0,Section I. Income,"=== Monthly gross salary or wages  + Monthly bnusesommissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + Monthly alimony actually received (Add 9a and 9b)  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses  + Monthly gains derived from dealing in property (not including nonrecurring gains)  + Any other income of a recurring nature",5,text
+Monthly gross salary or wages,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly disability benefits/SSI,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Workers’ Compensation,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Unemployment Compensation,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly pension, retirement, or annuity payments",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly Social Security benefits,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,=== From this case Monthly alimony actually received + [From other case(s)Monthly alimony actually Received],5,text
+From this case Monthly alimony actually received,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+From other case(s)Monthly alimony actually Received,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly interest and dividends,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly rental income (gross receipts minus ordinary and necessary expenses required to produce income) (Attach sheet itemizing such income and expense items.),,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+"Monthly income from royalties, trusts, or estates",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Monthly gains derived from dealing in property (not including nonrecurring gains),,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Any other income of a recurring nature,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Source1,0 Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Source 2,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+TOTAL PRESENT MONTHLY GROSS INCOME,0,Section I. Income,"=== Monthly gross salary or wages  + Monthly bonuses, commissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + [Monthly alimony actually received (Add 9a and 9b)]  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + [Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses]  + [Monthly gains derived from dealing in property (not including nonrecurring gains)]  + Any other income of a recurring nature + Source1 + Source 2",5,text
 "Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
 a Filing Status,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
 b Number of dependents claimed,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
 Monthly FICA or self-employment taxes,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly Medicare payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly mandatory union dues,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly mandatory retirement payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly health insurance payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly court-ordered child support actually paid for children from another relationship,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly court-ordered alimony actually paid (Add 25a and 25b),,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-25a from this case,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-25b from other cases,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),0,Section I. Income,~~~ needs to compute,5,text
-Monthly health insurance payments,,Section II. Average Monthly Expenses,,6,text
-Mortgage,,Section II. Average Monthly Expenses,,6,text
+Monthly Medicare payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory union dues,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly mandatory retirement payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly health insurance payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered child support actually paid for children from another relationship,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+Monthly court-ordered alimony actually paid (Add 25a and 25b),0,Section I. Income,=== 25a from this case + 25b from other cases,6,text
+25a from this case,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+25b from other cases,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+"TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30, FLORIDA STATUTES (Add lines 18 through 25)",0,Section I. Income,"=== [Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)] +  a Filing Status + b Number of dependents claimed + [Monthly FICA or self-employment taxes] + Monthly Medicare payments + Monthly mandatory union dues + Monthly mandatory retirement payments + Monthly health insurance payments + [Monthly court-ordered child support actually paid for children from another relationship] + [Monthly court-ordered alimony actually paid (Add 25a and 25b)]",6,text
+PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),0,Section I. Income,"=== [TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30, FLORIDA STATUTES (Add lines 18 through 25)] - TOTAL PRESENT MONTHLY GROSS INCOME",6,text
+Mortgage,3364,Section II. Average Monthly Expenses,,6,text
 PropertyTaxes,,Section II. Average Monthly Expenses,,6,text
 MonthlyInsurance,,Section II. Average Monthly Expenses,,6,text
 Monthly condominium maintenance fees and homeowner’s association fees,,Section II. Average Monthly Expenses,,6,text
-Monthly electricity,,Section II. Average Monthly Expenses,,6,text
-"Monthly water, garbage, and sewer",,Section II. Average Monthly Expenses,,6,text
-Monthly telephone,,Section II. Average Monthly Expenses,,6,text
+Monthly electricity,238,Section II. Average Monthly Expenses,,6,text
+"Monthly water, garbage, and sewer",120,Section II. Average Monthly Expenses,,6,text
+Monthly telephone,164,Section II. Average Monthly Expenses,,6,text
 Monthly fuel oil or natural gas,,Section II. Average Monthly Expenses,,6,text
-Monthly repairs and maintenance,,Section II. Average Monthly Expenses,,6,text
-Monthly lawn care,,Section II. Average Monthly Expenses,,6,text
+Monthly repairs and maintenance,100,Section II. Average Monthly Expenses,,6,text
+Monthly lawn care,80,Section II. Average Monthly Expenses,,6,text
 Monthly pool maintenance,,Section II. Average Monthly Expenses,,6,text
-Monthly pest control,,Section II. Average Monthly Expenses,,6,text
-Monthly food and home supplies,,Section II. Average Monthly Expenses,,6,text
+Monthly pest control,85,Section II. Average Monthly Expenses,,6,text
+Monthly food and home supplies,493,Section II. Average Monthly Expenses,,6,text
 Monthly meals outside home,,Section II. Average Monthly Expenses,,6,text
+Monthly cable t.v,27,Section II. Average Monthly Expenses,,6,text
 Monthly alarm service contract,,Section II. Average Monthly Expenses,,6,text
 Monthly service contracts on appliances,,Section II. Average Monthly Expenses,,6,text
 Monthly maid service,,Section II. Average Monthly Expenses,,6,text
@@ -89,509 +91,631 @@ Other Househose Expense2,,Section II. Average Monthly Expenses,,6,text
 Other Househose Expense3,,Section II. Average Monthly Expenses,,6,text
 Other Househose Expense4,,Section II. Average Monthly Expenses,,6,text
 Other Househose Expense5,,Section II. Average Monthly Expenses,,6,text
-Subtotal,,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-Monthly gasoline and oil,,Section II. Average Monthly Expenses,,6,text
-Monthly repairs,,Section II. Average Monthly Expenses,,6,text
-Monthly auto tags and emission testing,,Section II. Average Monthly Expenses,,6,text
-Monthly insurance,,Section II. Average Monthly Expenses,,6,text
-Monthly payments (lease or financing),,Section II. Average Monthly Expenses,,6,text
-Monthly rental/replacements,,Section II. Average Monthly Expenses,,6,text
-Monthly tolls and parking,,Section II. Average Monthly Expenses,,6,text
-OtherAutomobile,,Section II. Average Monthly Expenses,,6,text
-IndicateOtherAutomobile,,Section II. Average Monthly Expenses,,6,text
-SubtotalAuto,,Section II. Average Monthly Expenses,,6,text
-"Monthly nursery, babysitting, or day care",,Section II. Average Monthly Expenses,,6,text
-Monthly school tuition,,Section II. Average Monthly Expenses,,6,text
-"Monthly school supplies, books, and fees",,Section II. Average Monthly Expenses,,6,text
-Monthly after school activities,,Section II. Average Monthly Expenses,,6,text
-Monthly lunch money,,Section II. Average Monthly Expenses,,6,text
-Monthly private lessons or tutoring,,Section II. Average Monthly Expenses,,6,text
-Monthly allowances,,Section II. Average Monthly Expenses,,6,text
-Monthly clothing and uniforms,,Section II. Average Monthly Expenses,,6,text
-Monthly health insurance,,Section II. Average Monthly Expenses,,6,text
-"Monthly medical, dental, prescriptions (nonreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-Monthly psychiatric/psychological/counselor,,Section II. Average Monthly Expenses,,6,text
-Monthly orthodontic,,Section II. Average Monthly Expenses,,6,text
-Monthly vitamins,,Section II. Average Monthly Expenses,,6,text
-Monthly beauty parlor/barber shop,,Section II. Average Monthly Expenses,,6,text
-Monthly nonprescription medication,,Section II. Average Monthly Expenses,,6,text
-"Monthly cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,6,text
-Monthly camp or summer activities,,Section II. Average Monthly Expenses,,6,text
-Monthly time-sharing expenses,,Section II. Average Monthly Expenses,,6,text
-Monthly miscellaneous,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 36 through 57),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-OtherExpensesForChildren1,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren2,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren3,,Section II. Average Monthly Expenses,,6,text
-OtherExpensesForChildren4,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 59 through 62),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-Health insurance (if not listed on lines 23 or 45),,Section II. Average Monthly Expenses,,6,text
-Life insurance,,Section II. Average Monthly Expenses,,6,text
-Dental insurance,,Section II. Average Monthly Expenses,,6,text
-OtherMonthly1,,Section II. Average Monthly Expenses,,6,text
-OtherMonthly2,,Section II. Average Monthly Expenses,,6,text
-"SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65)",,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-Monthly dry cleaning and laundry,,Section II. Average Monthly Expenses,,6,text
-Monthly clothing,,Section II. Average Monthly Expenses,,6,text
-"Monthly medical, dental, and prescription (unreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-"Monthly psychiatric, psychological, or counselor (unreimbursed only)",,Section II. Average Monthly Expenses,,6,text
-"Monthly non-prescription medications, cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,6,text
-Monthly grooming,,Section II. Average Monthly Expenses,,6,text
-Monthly gifts,,Section II. Average Monthly Expenses,,6,text
-Monthly pet expenses,,Section II. Average Monthly Expenses,,6,text
-Monthly club dues and membership,,Section II. Average Monthly Expenses,,6,text
-Monthly sports and hobbies,,Section II. Average Monthly Expenses,,6,text
-Monthly entertainment,,Section II. Average Monthly Expenses,,6,text
-Monthly periodicals/books/tapes/CDs,,Section II. Average Monthly Expenses,,6,text
-Monthly vacations,,Section II. Average Monthly Expenses,,6,text
-Monthly religious organizations,,Section II. Average Monthly Expenses,,6,text
-Monthly bank charges/credit card fees,,Section II. Average Monthly Expenses,,6,text
-Monthly education expenses,,Section II. Average Monthly Expenses,,6,text
-Other: (include any usual and customary expenses not otherwise mentioned in the items,,Section II. Average Monthly Expenses,,6,text
-listed above1,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed2,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed3,,Section II. Average Monthly Expenses,,6,text
-OtherMonthlyNotListed4,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 70 through 89),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-MonthlyCreditors1,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors2,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors3,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors4,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors5,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors6,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors7,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors8,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors9,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors10,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors11,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors12,,Section II. Average Monthly Expenses,,6,text
-MonthlyCreditors13,,Section II. Average Monthly Expenses,,6,text
-SUBTOTAL (add lines 91 through 103),,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-"TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",,Section II. Average Monthly Expenses,~~~ needs to compute,6,text
-TOTAL MONTHLY EXPENSES (from line 105 above),,Section II. Average Monthly Expenses,~~~ needs to compute,9,text
-Check Box11,,Section III.  Assets and Liabilities,,9,checkbox
-Cash (on hand),,Section III.  Assets and Liabilities,,9,text
-Current fair market value1,,Section III.  Assets and Liabilities,,9,text
-Check Box12,,Section III.  Assets and Liabilities,,9,checkbox
-Cash (in banks or credit unions),,Section III.  Assets and Liabilities,,9,text
-Current fair market value2,,Section III.  Assets and Liabilities,,9,text
-Check Box12b,,Section III.  Assets and Liabilities,,9,checkbox
-Cash2,,Section III.  Assets and Liabilities,,9,text
-Current fair market value,,Section III.  Assets and Liabilities,,9,text
-Check Box13,,Section III.  Assets and Liabilities,,9,checkbox
-Stocks/Bonds1,,Section III.  Assets and Liabilities,,9,text
-Current fair market value4,,Section III.  Assets and Liabilities,,9,text
-Check Box14,,Section III.  Assets and Liabilities,,9,checkbox
-Stocks/Bonds2,,Section III.  Assets and Liabilities,,9,text
-Current fair market value5,,Section III.  Assets and Liabilities,,9,text
-Check Box15,,Section III.  Assets and Liabilities,,9,checkbox
-Stocks/Bonds3,,Section III.  Assets and Liabilities,,9,text
-Check Box17,,Section III.  Assets and Liabilities,,9,checkbox
-Notes money owed to you in writingRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box18,,Section III.  Assets and Liabilities,,9,checkbox
-Notes money owed to you in writingRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box20,,Section III.  Assets and Liabilities,,9,checkbox
-money owed to youRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box21,,Section III.  Assets and Liabilities,,9,checkbox
-money owed to youRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box22,,Section III.  Assets and Liabilities,,9,checkbox
-RealEstateHome,,Section III.  Assets and Liabilities,,9,text
-Check Box23,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box24,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box25,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box26,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow3,,Section III.  Assets and Liabilities,,9,text
-Check Box27,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow4,,Section III.  Assets and Liabilities,,9,text
-Check Box28,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow5,,Section III.  Assets and Liabilities,,9,text
-Check Box29,,Section III.  Assets and Liabilities,,9,checkbox
-OtherRow6e,,Section III.  Assets and Liabilities,,9,text
-Check Box30,,Section III.  Assets and Liabilities,,9,checkbox
-Business interestsRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box31,,Section III.  Assets and Liabilities,,9,checkbox
-Business interestsRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box32,,Section III.  Assets and Liabilities,,9,checkbox
-Business interestsRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box33,,Section III.  Assets and Liabilities,,9,checkbox
-Business interestsRow3,,Section III.  Assets and Liabilities,,9,text
-Check Box34,,Section III.  Assets and Liabilities,,9,checkbox
-Business interestsRow4,,Section III.  Assets and Liabilities,,9,text
-Check Box35,,Section III.  Assets and Liabilities,,9,checkbox
-AutomobilesRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box36,,Section III.  Assets and Liabilities,,9,checkbox
-AutomobilesRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box37,,Section III.  Assets and Liabilities,,9,checkbox
-AutomobilesRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box38,,Section III.  Assets and Liabilities,,9,checkbox
-AutomobilesRow3,,Section III.  Assets and Liabilities,,9,text
-Check Box39,,Section III.  Assets and Liabilities,,9,checkbox
-BoatsRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box40,,Section III.  Assets and Liabilities,,9,checkbox
-BoatsRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box41,,Section III.  Assets and Liabilities,,9,checkbox
-BoatsRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box42_z,,Section III.  Assets and Liabilities,,9,checkbox
-Other vehiclesRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box42,,Section III.  Assets and Liabilities,,9,checkbox
-Other vehiclesRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box43,,Section III.  Assets and Liabilities,,9,checkbox
-Other vehiclesRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box44,,Section III.  Assets and Liabilities,,9,checkbox
-Retirement plans Profit Sharing Pension IRA 401ks etcRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box45,,Section III.  Assets and Liabilities,,9,checkbox
-Retirement plans Profit Sharing Pension IRA 401ks etcRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box46,,Section III.  Assets and Liabilities,,9,checkbox
-Retirement plans Profit Sharing Pension IRA 401ks etcRow2,,Section III.  Assets and Liabilities,,9,text
-Check Box47,,Section III.  Assets and Liabilities,,9,checkbox
-Retirement plans Profit Sharing Pension IRA 401ks etcRow3,,Section III.  Assets and Liabilities,,9,text
-Check Box49,,Section III.  Assets and Liabilities,,9,checkbox
-Furniture  furnishings in homeRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box50,,Section III.  Assets and Liabilities,,9,checkbox
-Furniture  furnishings elsewhereRow0,,Section III.  Assets and Liabilities,,9,text
-Check Box51,,Section III.  Assets and Liabilities,,9,checkbox
-Furniture  furnishings elsewhereRow1,,Section III.  Assets and Liabilities,,9,text
-Check Box52,,Section III.  Assets and Liabilities,,9,checkbox
-Collectibles1,,Section III.  Assets and Liabilities,,9,text
-Collectibles2,,Section III.  Assets and Liabilities,,9,text
-JewelryRow0,,Section III.  Assets and Liabilities,,9,text
-JewelryRow1,,Section III.  Assets and Liabilities,,9,text
-Life insurance cash surrender valueRow0,,Section III.  Assets and Liabilities,,9,text
-Life insurance cash surrender valueRow1,,Section III.  Assets and Liabilities,,9,text
-Life insurance cash surrender valueRow2,,Section III.  Assets and Liabilities,,9,text
-Sporting and entertainment TV stereo etc equipmentRow0,,Section III.  Assets and Liabilities,,9,text
-Sporting and entertainment TV stereo etc equipmentRow1,,Section III.  Assets and Liabilities,,9,text
-Sporting and entertainment TV stereo etc equipmentRow2,,Section III.  Assets and Liabilities,,9,text
-Sporting and entertainment TV stereo etc equipmentRow3,,Section III.  Assets and Liabilities,,9,text
-Sporting and entertainment TV stereo etc equipmentRow4,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow0,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow1,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow2,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow3,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow4,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow5,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow6,,Section III.  Assets and Liabilities,,9,text
-Other assetsRow7,,Section III.  Assets and Liabilities,,9,text
-TotalAssesstsBColumn1,,Section III.  Assets and Liabilities,,9,text
-First Mortgage,,Section III.  Assets and Liabilities,,9,text
-Second mortgage,,Section III.  Assets and Liabilities,,9,text
-Other mortgagesRow0,,Section III.  Assets and Liabilities,,9,text
-Other mortgagesRow1,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accounts0,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accountsRow1,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accountsRow2,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accountsRow3,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accountsRow4,,Section III.  Assets and Liabilities,,9,text
-Chargecredit card accountsRow5,,Section III.  Assets and Liabilities,,9,text
-AutoLoan1,,Section III.  Assets and Liabilities,,9,text
-AutoLoan2,,Section III.  Assets and Liabilities,,9,text
-BankCredit Union loansRow0,,Section III.  Assets and Liabilities,,9,text
-BankCredit Union loansRow1,,Section III.  Assets and Liabilities,,9,text
-BankCredit Union loansRow2,,Section III.  Assets and Liabilities,,9,text
-BankCredit Union loansRow3,,Section III.  Assets and Liabilities,,9,text
-Money you owe not evidenced by a note0,,Section III.  Assets and Liabilities,,9,text
-Money you owe not evidenced by a noteRow1,,Section III.  Assets and Liabilities,,9,text
-JudgmentsRow0,,Section III.  Assets and Liabilities,,9,text
-JudgmentsRow1,,Section III.  Assets and Liabilities,,9,text
-OtherRow0,,Section III.  Assets and Liabilities,,9,text
-OtherRow1_2,,Section III.  Assets and Liabilities,,9,text
-OtherRow2_2,,Section III.  Assets and Liabilities,,9,text
-OtherRow3_2,,Section III.  Assets and Liabilities,,9,text
-OtherRow4_2,,Section III.  Assets and Liabilities,,9,text
-OtherRow5_2,,Section III.  Assets and Liabilities,,9,text
-OtherRow6,,Section III.  Assets and Liabilities,,9,text
-TotalAssests100,,Section III.  Assets and Liabilities,,9,text
-TotalLiabilities100,,Section III.  Assets and Liabilities,,9,text
-TotalNetWorth100,,Section III.  Assets and Liabilities,,9,text
-A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow1,,Section III.  Assets and Liabilities,,9,text
-A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow2_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow3_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow4_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow5_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow1_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow2_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow3_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow4_2,,Section III.  Assets and Liabilities,,9,text
-A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow5_2,,Section III.  Assets and Liabilities,,9,text
-Check Box73,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box74,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box75,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box76,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box77,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box78,,Section III.  Assets and Liabilities,,9,checkbox
-hand delivered to the persons listed below on date,,Section III.  Assets and Liabilities,,9,text
-Name,,Section III.  Assets and Liabilities,,9,text
-Address_3,,Section III.  Assets and Liabilities,,9,text
-City State Zip,,Section III.  Assets and Liabilities,,9,text
-Fax Number,,Section III.  Assets and Liabilities,,9,text
-Email Addresses,,Section III.  Assets and Liabilities,,9,text
-Phone Number,,Section III.  Assets and Liabilities,,9,text
-Dated,,Section III.  Assets and Liabilities,,9,text
-Printed Name,,Section III.  Assets and Liabilities,,9,text
-Address_4,,Section III.  Assets and Liabilities,,9,text
-City State Zip_2,,Section III.  Assets and Liabilities,,9,text
-Fax Number_2,,Section III.  Assets and Liabilities,,9,text
-Email Addresses_2,,Section III.  Assets and Liabilities,,9,text
-Phone Number_2,,Section III.  Assets and Liabilities,,9,text
-Check Box79,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box80,,Section III.  Assets and Liabilities,,9,checkbox
-name of individual,,Section III.  Assets and Liabilities,,9,text
-name of business,,Section III.  Assets and Liabilities,,9,text
-address non lawyer,,Section III.  Assets and Liabilities,,9,text
-state nonlawyer,,Section III.  Assets and Liabilities,,9,text
-telephone number nonlawyer,,Section III.  Assets and Liabilities,,9,text
-city nonlawyer,,Section III.  Assets and Liabilities,,9,text
-Check Box8.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.5a,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.5b,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.14a,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.15a,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.16a,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.21,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.22,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.23,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.24,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.25,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.21,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.26,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.27,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.27,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.28,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.28,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.29,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.29,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.30,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.30,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.31,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.31,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.32,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.32,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.34,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.34,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.35,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.35,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.36,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.36,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.37,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.37,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box53.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box8.5.38.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box9.5.38.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.5,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.6,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.7,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.8,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.9,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.10,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.11,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.12,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.13,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.14,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.15,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.16,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.17,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.18,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.19,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.20,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.21,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.21,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.21,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.22,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.22,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.22,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.23,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.23,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.23,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.24,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.24,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.24,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.25,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.25,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.25,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box62.26,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box64.26,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box65.26,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box67.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box68.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box69.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box67.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box68.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box69.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box67.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box68.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box69.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box67.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box68.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box69.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box67.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box68.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box69.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box70.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box71.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box72.0,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box70.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box71.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box72.1,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box70.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box71.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box72.2,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box70.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box71.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box72.3,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box70.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box71.4,,Section III.  Assets and Liabilities,,9,checkbox
-Check Box72.4,,Section III.  Assets and Liabilities,,9,checkbox
-"Monthly business income from sources such as self-employment, partnerships, close corporations, and/or independent contracts (gross receipts minus ordinary and necessary expenses required to produce income) (Attach sheet itemizing such income and expenses.)",,Section III.  Assets and Liabilities,,9,text
+Subtotal,4671,Section II. Average Monthly Expenses,"=== Mortgage + PropertyTaxes + MonthlyInsurance + Monthly condominium maintenance fees and homeowner’s association fees + Monthly electricity + Monthly water, garbage, and sewer + Monthly telephone + Monthly fuel oil or natural gas + Monthly repairs and maintenance + Monthly lawn care + Monthly pool maintenance + Monthly pest control + Monthly food and home supplies + Monthly meals outside home + Monthly cable t.v + Monthly alarm service contract + Monthly service contracts on appliances + Monthly maid service + Other Househose Expense1 + Other Househose Expense2 + Other Househose Expense3 + Other Househose Expense4 + Other Househose Expense5",6,text
+Monthly gasoline and oil,,Section II. Average Monthly Expenses,,7,text
+Monthly repairs,,Section II. Average Monthly Expenses,,7,text
+Monthly auto tags and emission testing,4,Section II. Average Monthly Expenses,,7,text
+Monthly insurance,267,Section II. Average Monthly Expenses,,7,text
+Monthly payments (lease or financing),1000,Section II. Average Monthly Expenses,,7,text
+Monthly rental/replacements,25,Section II. Average Monthly Expenses,,7,text
+Monthly tolls and parking,,Section II. Average Monthly Expenses,,7,text
+OtherAutomobile,,Section II. Average Monthly Expenses,,7,text
+IndicateOtherAutomobile,,Section II. Average Monthly Expenses,,7,text
+SubtotalAuto,1296,Section II. Average Monthly Expenses,=== Monthly gasoline and oil + Monthly repairs + Monthly auto tags and emission testing + Monthly insurance + [Monthly payments (lease or financing)] + Monthly rental/replacements + Monthly tolls and parking + OtherAutomobile + IndicateOtherAutomobile,7,text
+"Monthly nursery, babysitting, or day care",,Section II. Average Monthly Expenses,,7,text
+Monthly school tuition,,Section II. Average Monthly Expenses,,7,text
+"Monthly school supplies, books, and fees",,Section II. Average Monthly Expenses,,7,text
+Monthly after school activities,,Section II. Average Monthly Expenses,,7,text
+Monthly lunch money,,Section II. Average Monthly Expenses,,7,text
+Monthly private lessons or tutoring,,Section II. Average Monthly Expenses,,7,text
+Monthly allowances,,Section II. Average Monthly Expenses,,7,text
+Monthly clothing and uniforms,,Section II. Average Monthly Expenses,,7,text
+"Monthly entertainment (movies, parties, etc.)",100,Section II. Average Monthly Expenses,,7,text
+Monthly health insurance,,Section II. Average Monthly Expenses,,7,text
+"Monthly medical, dental, prescriptions (nonreimbursed only)",,Section II. Average Monthly Expenses,,7,text
+Monthly psychiatric/psychological/counselor,,Section II. Average Monthly Expenses,,7,text
+Monthly orthodontic,,Section II. Average Monthly Expenses,,7,text
+Monthly vitamins,,Section II. Average Monthly Expenses,,7,text
+Monthly beauty parlor/barber shop,,Section II. Average Monthly Expenses,,7,text
+Monthly nonprescription medication,,Section II. Average Monthly Expenses,,7,text
+"Monthly cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,7,text
+Monthly camp or summer activities,,Section II. Average Monthly Expenses,,7,text
+Monthly time-sharing expenses,,Section II. Average Monthly Expenses,,7,text
+Monthly miscellaneous,,Section II. Average Monthly Expenses,,7,text
+SUBTOTAL (add lines 36 through 57),100,Section II. Average Monthly Expenses,"=== [Monthly entertainment (movies, parties, etc.)] + Monthly nursery, babysitting, or day care + Monthly school tuition + Monthly school supplies, books, and fees + Monthly after school activities + Monthly lunch money +Monthly private lessons or tutoring + Monthly allowances + Monthly clothing and uniforms + Monthly health insurance + [Monthly medical, dental, prescriptions (nonreimbursed only)] + Monthly psychiatric/psychological/counselor + Monthly orthodontic + Monthly vitamins + Monthly beauty parlor/barber shop + Monthly nonprescription medication + Monthly cosmetics, toiletries, and sundries + Monthly camp or summer activities + [Monthly time-sharing expenses] + Monthly miscellaneous",7,text
+OtherExpensesForChildren1,,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren2,,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren3,,Section II. Average Monthly Expenses,,7,text
+OtherExpensesForChildren4,,Section II. Average Monthly Expenses,,7,text
+SUBTOTAL (add lines 59 through 62),0,Section II. Average Monthly Expenses,=== OtherExpensesForChildren1 + OtherExpensesForChildren2 + OtherExpensesForChildren3 + OtherExpensesForChildren4,7,text
+Health insurance (if not listed on lines 23 or 45),,Section II. Average Monthly Expenses,,8,text
+Life insurance,59.84,Section II. Average Monthly Expenses,,8,text
+Dental insurance,,Section II. Average Monthly Expenses,,8,text
+OtherMonthly1,,Section II. Average Monthly Expenses,,8,text
+OtherMonthly2,,Section II. Average Monthly Expenses,,8,text
+"SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65)",0,Section II. Average Monthly Expenses,=== Dental insurance + OtherMonthly1 + OtherMonthly2,8,text
+Monthly dry cleaning and laundry,,Section II. Average Monthly Expenses,,8,text
+Monthly clothing,20,Section II. Average Monthly Expenses,,8,text
+"Monthly psychiatric, psychological, or counselor (unreimbursed only)",,Section II. Average Monthly Expenses,,8,text
+"Monthly non-prescription medications, cosmetics, toiletries, and sundries",,Section II. Average Monthly Expenses,,8,text
+Monthly grooming,50,Section II. Average Monthly Expenses,,8,text
+Monthly gifts,,Section II. Average Monthly Expenses,,8,text
+Monthly pet expenses,55,Section II. Average Monthly Expenses,,8,text
+Monthly club dues and membership,,Section II. Average Monthly Expenses,,8,text
+Monthly sports and hobbies,25,Section II. Average Monthly Expenses,,8,text
+Monthly entertainment,25,Section II. Average Monthly Expenses,,8,text
+"Monthly medical, dental, and prescription (unreimbursed only)",,Section II. Average Monthly Expenses,,8,text
+Monthly periodicals/books/tapes/CDs,,Section II. Average Monthly Expenses,,8,text
+Monthly vacations,25,Section II. Average Monthly Expenses,,8,text
+Monthly religious organizations,,Section II. Average Monthly Expenses,,8,text
+Monthly bank charges/credit card fees,,Section II. Average Monthly Expenses,,8,text
+Monthly education expenses,,Section II. Average Monthly Expenses,,8,text
+Other: (include any usual and customary expenses not otherwise mentioned in the items,,Section II. Average Monthly Expenses,,8,text
+listed above1,,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed2,,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed3,,Section II. Average Monthly Expenses,,8,text
+OtherMonthlyNotListed4,,Section II. Average Monthly Expenses,,8,text
+SUBTOTAL (add lines 70 through 89),200,Section II. Average Monthly Expenses,"=== Monthly dry cleaning and laundry + Monthly clothing + [Monthly psychiatric, psychological, or counselor (unreimbursed only)] + [Monthly non-prescription medications, cosmetics, toiletries, and sundries] + Monthly grooming + Monthly gifts + Monthly pet expenses + Monthly club dues and membership + Monthly sports and hobbies + Monthly entertainment + [Monthly medical, dental, and prescription (unreimbursed only)] + Monthly periodicals/books/tapes/CDs + Monthly vacations + Monthly religious organizations + Monthly bank charges/credit card fees + Monthly education expenses + [Other: (include any usual and customary expenses not otherwise mentioned in the items] + listed above1 + OtherMonthlyNotListed2 + OtherMonthlyNotListed3 + OtherMonthlyNotListed4",8,text
+MonthlyCreditors1,3039  - 6436,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors2,"2942. - 0705 ",Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors3,422 - 9701,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors4,1000 - 7208,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors5,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors6,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors7,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors8,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors9,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors10,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors11,,Section II. Average Monthly Expenses,,8,text
+MonthlyCreditors12,,Section II. Average Monthly Expenses,,9,text
+MonthlyCreditors13,,Section II. Average Monthly Expenses,,9,text
+SUBTOTAL (add lines 91 through 103),7403,Section II. Average Monthly Expenses,=== MonthlyCreditors1 + MonthlyCreditors2 + MonthlyCreditors3 + MonthlyCreditors4 + MonthlyCreditors5 + MonthlyCreditors6 + MonthlyCreditors7 + MonthlyCreditors8 + MonthlyCreditors9 + MonthlyCreditors10 + MonthlyCreditors11 + MonthlyCreditors12 + MonthlyCreditors13,9,text
+"TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",13670,Section II. Average Monthly Expenses,"=== Subtotal + SubtotalAuto + SUBTOTAL (add lines 36 through 57) + SUBTOTAL (add lines 59 through 62) + SUBTOTAL (add lines 66 through 68, exclude lines 64 and 65) + SUBTOTAL (add lines 70 through 89) + SUBTOTAL (add lines 91 through 103)",9,text
+TOTAL PRESENT MONTHLY NET INCOME (from line 27 of SECTION I. INCOME),0,Section II. Average Monthly Expenses,=== PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),9,text
+TOTAL MONTHLY EXPENSES (from line 105 above),13670,Section II. Average Monthly Expenses,"=== TotalMonthlyExpenses (add lines 25, 35, 58, 63, 69, 90, and 104 of Section II, Expenses)",9,text
+"SURPLUS (If line 106 is more than line 107, subtract line 107 from line 106. This is the amount of your surplus. Enter that amount here.)",,Section II. Average Monthly Expenses,,9,text
+")(DEFICIT) (If line 107 is more than line 106, subtract line 106 from line 107. This is the amount of your deficit. Enter that amount here.)",13670,Section II. Average Monthly Expenses,,9,text
+Check Box11,Yes,Section III.  Assets and Liabilities,,10,checkbox
+Cash (on hand),,Section III.  Assets and Liabilities,,10,text
+Current fair market value1,2,Section III.  Assets and Liabilities,,10,text
+Check Box8,Off,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.0,Off,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.1,Off,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.5a,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.5b,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.14a,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.15a,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.16a,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.21,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.27,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.28,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.29,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.30,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.31,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.32,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.34,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.35,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.36,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.37,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box8.5.38.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.21,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.22,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.23,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.24,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.25,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.26,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.27,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.28,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.29,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.30,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.31,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.32,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.34,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.35,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.36,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.37,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box9.5.38.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box12,,Section III.  Assets and Liabilities,,10,checkbox
+Cash (in banks or credit unions),,Section III.  Assets and Liabilities,,10,text
+Current fair market value2,15000,Section III.  Assets and Liabilities,,10,text
+Check Box12b,,Section III.  Assets and Liabilities,,10,checkbox
+Cash2,,Section III.  Assets and Liabilities,,10,text
+Current fair market value,,Section III.  Assets and Liabilities,,10,text
+Check Box13,,Section III.  Assets and Liabilities,,10,checkbox
+Stocks/Bonds1,,Section III.  Assets and Liabilities,,10,text
+Current fair market value4,100,Section III.  Assets and Liabilities,,10,text
+Check Box14,Off,Section III.  Assets and Liabilities,,10,checkbox
+Stocks/Bonds2,,Section III.  Assets and Liabilities,,10,text
+Current fair market value5,,Section III.  Assets and Liabilities,,10,text
+Check Box15,,Section III.  Assets and Liabilities,,10,checkbox
+Stocks/Bonds3,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.0,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.2,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.3,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.4,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.5,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.6,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.7,459000,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.8,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.9,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.10,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.11,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.12,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.13,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.14,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.15,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.16,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.17,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.18,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.19,28999,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.20,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.21,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.22,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.23,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.24,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.25,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.26,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.27,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.28,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.29,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.30,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.31,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.32,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.34,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.35,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.36,,Section III.  Assets and Liabilities,,10,text
+Current fair market value6.0.37,,Section III.  Assets and Liabilities,,10,text
+Check Box17,,Section III.  Assets and Liabilities,,10,checkbox
+Notes money owed to you in writingRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box18,,Section III.  Assets and Liabilities,,10,checkbox
+Notes money owed to you in writingRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box20,,Section III.  Assets and Liabilities,,10,checkbox
+money owed to youRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box21,,Section III.  Assets and Liabilities,,10,checkbox
+money owed to youRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box22,,Section III.  Assets and Liabilities,,10,checkbox
+RealEstateHome,,Section III.  Assets and Liabilities,,10,text
+Check Box23,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box24,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box25,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box26,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow3,,Section III.  Assets and Liabilities,,10,text
+Check Box27,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow4,,Section III.  Assets and Liabilities,,10,text
+Check Box28,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow5,,Section III.  Assets and Liabilities,,10,text
+Check Box29,,Section III.  Assets and Liabilities,,10,checkbox
+OtherRow6e,,Section III.  Assets and Liabilities,,10,text
+Check Box30,,Section III.  Assets and Liabilities,,10,checkbox
+Business interestsRow0,,Section III.  Assets and Liabilities,,10,text
+Check Box31,,Section III.  Assets and Liabilities,,10,checkbox
+Business interestsRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box32,,Section III.  Assets and Liabilities,,10,checkbox
+Business interestsRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box33,,Section III.  Assets and Liabilities,,10,checkbox
+Business interestsRow3,,Section III.  Assets and Liabilities,,10,text
+Check Box34,,Section III.  Assets and Liabilities,,10,checkbox
+Business interestsRow4,,Section III.  Assets and Liabilities,,10,text
+Check Box35,,Section III.  Assets and Liabilities,,10,checkbox
+AutomobilesRow0,2024 Tesla Y,Section III.  Assets and Liabilities,,10,text
+Check Box36,,Section III.  Assets and Liabilities,,10,checkbox
+AutomobilesRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box37,,Section III.  Assets and Liabilities,,10,checkbox
+AutomobilesRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box38,,Section III.  Assets and Liabilities,,10,checkbox
+AutomobilesRow3,,Section III.  Assets and Liabilities,,10,text
+Check Box39,,Section III.  Assets and Liabilities,,10,checkbox
+BoatsRow0,,Section III.  Assets and Liabilities,,10,text
+Check Box40,,Section III.  Assets and Liabilities,,10,checkbox
+BoatsRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box41,,Section III.  Assets and Liabilities,,10,checkbox
+BoatsRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box42_z,,Section III.  Assets and Liabilities,,10,checkbox
+Other vehiclesRow0,,Section III.  Assets and Liabilities,,10,text
+Check Box42,,Section III.  Assets and Liabilities,,10,checkbox
+Other vehiclesRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box43,,Section III.  Assets and Liabilities,,10,checkbox
+Other vehiclesRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box44,,Section III.  Assets and Liabilities,,10,checkbox
+Retirement plans Profit Sharing Pension IRA 401ks etcRow0,,Section III.  Assets and Liabilities,,10,text
+Check Box45,,Section III.  Assets and Liabilities,,10,checkbox
+Retirement plans Profit Sharing Pension IRA 401ks etcRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box46,,Section III.  Assets and Liabilities,,10,checkbox
+Retirement plans Profit Sharing Pension IRA 401ks etcRow2,,Section III.  Assets and Liabilities,,10,text
+Check Box47,,Section III.  Assets and Liabilities,,10,checkbox
+Retirement plans Profit Sharing Pension IRA 401ks etcRow3,,Section III.  Assets and Liabilities,,10,text
+Check Box49,,Section III.  Assets and Liabilities,,10,checkbox
+Furniture  furnishings in homeRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box50,,Section III.  Assets and Liabilities,,10,checkbox
+Furniture  furnishings elsewhereRow0,,Section III.  Assets and Liabilities,,10,text
+Check Box51,,Section III.  Assets and Liabilities,,10,checkbox
+Furniture  furnishings elsewhereRow1,,Section III.  Assets and Liabilities,,10,text
+Check Box52,,Section III.  Assets and Liabilities,,10,checkbox
+Collectibles1,,Section III.  Assets and Liabilities,,10,text
+Check Box53,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box53.18,,Section III.  Assets and Liabilities,,10,checkbox
+Collectibles2,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77,adsf,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.0,77,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.1,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.2,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.3,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.4,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.5,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.6,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.7,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.8,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.9,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.10,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.11,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.12,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.13,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.14,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.15,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.16,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.17,,Section III.  Assets and Liabilities,,10,text
+Current fair market value77.18,,Section III.  Assets and Liabilities,,10,text
+JewelryRow0,,Section III.  Assets and Liabilities,,10,text
+JewelryRow1,,Section III.  Assets and Liabilities,,10,text
+Life insurance cash surrender valueRow0,,Section III.  Assets and Liabilities,,10,text
+Life insurance cash surrender valueRow1,,Section III.  Assets and Liabilities,,10,text
+Life insurance cash surrender valueRow2,,Section III.  Assets and Liabilities,,10,text
+Sporting and entertainment TV stereo etc equipmentRow0,,Section III.  Assets and Liabilities,,10,text
+Sporting and entertainment TV stereo etc equipmentRow1,,Section III.  Assets and Liabilities,,10,text
+Sporting and entertainment TV stereo etc equipmentRow2,,Section III.  Assets and Liabilities,,10,text
+Sporting and entertainment TV stereo etc equipmentRow3,,Section III.  Assets and Liabilities,,10,text
+Sporting and entertainment TV stereo etc equipmentRow4,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow0,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow1,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow2,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow3,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow4,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow5,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow6,,Section III.  Assets and Liabilities,,10,text
+Other assetsRow7,,Section III.  Assets and Liabilities,,10,text
+TotalAssesstsBColumn1,,Section III.  Assets and Liabilities,,10,text
+Check Box62,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.21,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.22,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.23,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.24,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.25,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box62.26,,Section III.  Assets and Liabilities,,10,checkbox
+First Mortgage,,Section III.  Assets and Liabilities,,10,text
+Text63,,Section III.  Assets and Liabilities,,10,text
+Text63.0,,Section III.  Assets and Liabilities,,10,text
+Text63.1,,Section III.  Assets and Liabilities,,10,text
+Text63.2,,Section III.  Assets and Liabilities,,10,text
+Text63.3,,Section III.  Assets and Liabilities,,10,text
+Text63.4,,Section III.  Assets and Liabilities,,10,text
+Text63.5,,Section III.  Assets and Liabilities,,10,text
+Text63.6,,Section III.  Assets and Liabilities,,10,text
+Text63.7,,Section III.  Assets and Liabilities,,10,text
+Text63.8,,Section III.  Assets and Liabilities,,10,text
+Text63.9,,Section III.  Assets and Liabilities,,10,text
+Text63.10,,Section III.  Assets and Liabilities,,10,text
+Text63.11,,Section III.  Assets and Liabilities,,10,text
+Text63.12,,Section III.  Assets and Liabilities,,10,text
+Text63.13,,Section III.  Assets and Liabilities,,10,text
+Text63.14,,Section III.  Assets and Liabilities,,10,text
+Text63.15,,Section III.  Assets and Liabilities,,10,text
+Text63.16,,Section III.  Assets and Liabilities,,10,text
+Text63.17,,Section III.  Assets and Liabilities,,10,text
+Text63.18,,Section III.  Assets and Liabilities,,10,text
+Text63.19,,Section III.  Assets and Liabilities,,10,text
+Text63.20,,Section III.  Assets and Liabilities,,10,text
+Text63.21,,Section III.  Assets and Liabilities,,10,text
+Text63.22,,Section III.  Assets and Liabilities,,10,text
+Text63.23,,Section III.  Assets and Liabilities,,10,text
+Text63.24,,Section III.  Assets and Liabilities,,10,text
+Text63.25,,Section III.  Assets and Liabilities,,10,text
+Text63.26,,Section III.  Assets and Liabilities,,10,text
+Text63.27,,Section III.  Assets and Liabilities,,10,text
+Check Box64,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.21,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.22,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.23,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.24,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.25,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box64.26,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.5,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.6,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.7,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.8,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.9,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.10,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.11,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.12,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.13,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.14,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.15,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.16,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.17,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.18,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.19,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.20,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.21,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.22,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.23,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.24,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.25,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box65.26,,Section III.  Assets and Liabilities,,10,checkbox
+Second mortgage,,Section III.  Assets and Liabilities,,10,text
+Other mortgagesRow0,,Section III.  Assets and Liabilities,,10,text
+Other mortgagesRow1,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accounts0,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accountsRow1,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accountsRow2,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accountsRow3,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accountsRow4,,Section III.  Assets and Liabilities,,10,text
+Chargecredit card accountsRow5,,Section III.  Assets and Liabilities,,10,text
+AutoLoan1,,Section III.  Assets and Liabilities,,10,text
+AutoLoan2,,Section III.  Assets and Liabilities,,10,text
+BankCredit Union loansRow0,,Section III.  Assets and Liabilities,,10,text
+BankCredit Union loansRow1,,Section III.  Assets and Liabilities,,10,text
+BankCredit Union loansRow2,,Section III.  Assets and Liabilities,,10,text
+BankCredit Union loansRow3,,Section III.  Assets and Liabilities,,10,text
+Money you owe not evidenced by a note0,,Section III.  Assets and Liabilities,,10,text
+Money you owe not evidenced by a noteRow1,,Section III.  Assets and Liabilities,,10,text
+JudgmentsRow0,,Section III.  Assets and Liabilities,,10,text
+JudgmentsRow1,,Section III.  Assets and Liabilities,,10,text
+OtherRow0,,Section III.  Assets and Liabilities,,10,text
+OtherRow1_2,,Section III.  Assets and Liabilities,,10,text
+OtherRow2_2,,Section III.  Assets and Liabilities,,10,text
+OtherRow3_2,,Section III.  Assets and Liabilities,,10,text
+OtherRow4_2,,Section III.  Assets and Liabilities,,10,text
+OtherRow5_2,,Section III.  Assets and Liabilities,,10,text
+OtherRow6,,Section III.  Assets and Liabilities,,10,text
+TotalAssests100,,Section III.  Assets and Liabilities,,10,text
+TotalLiabilities100,,Section III.  Assets and Liabilities,,10,text
+TotalNetWorth100,,Section III.  Assets and Liabilities,,10,text
+Check Box67,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box67.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box67.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box67.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box67.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box67.4,,Section III.  Assets and Liabilities,,10,checkbox
+A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow1,,Section III.  Assets and Liabilities,,10,text
+Row1,,Section III.  Assets and Liabilities,,10,text
+Row1.0,,Section III.  Assets and Liabilities,,10,text
+Row1.1,,Section III.  Assets and Liabilities,,10,text
+Row1.2,,Section III.  Assets and Liabilities,,10,text
+Row1.3,,Section III.  Assets and Liabilities,,10,text
+Row1.4,,Section III.  Assets and Liabilities,,10,text
+Row1.5,,Section III.  Assets and Liabilities,,10,text
+Check Box68,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box68.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box68.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box68.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box68.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box68.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box69.4,,Section III.  Assets and Liabilities,,10,checkbox
+A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow2_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow3_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow4_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Assets Check the line next to any contingent assets which you are requesting the judge award to youRow5_2,,Section III.  Assets and Liabilities,,10,text
+Check Box70,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box70.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box70.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box70.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box70.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box70.4,,Section III.  Assets and Liabilities,,10,checkbox
+A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow1_2,,Section III.  Assets and Liabilities,,10,text
+Row2,,Section III.  Assets and Liabilities,,10,text
+Row2.0,,Section III.  Assets and Liabilities,,10,text
+Row2.0.0,,Section III.  Assets and Liabilities,,10,text
+Row2.0.1,,Section III.  Assets and Liabilities,,10,text
+Row2.0.2,,Section III.  Assets and Liabilities,,10,text
+Row2.0.3,,Section III.  Assets and Liabilities,,10,text
+Row2.0.4,,Section III.  Assets and Liabilities,,10,text
+Row2.0.5,,Section III.  Assets and Liabilities,,10,text
+Check Box71,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box71.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box71.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box71.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box71.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box71.4,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72.0,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72.1,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72.2,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72.3,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box72.4,,Section III.  Assets and Liabilities,,10,checkbox
+A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow2_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow3_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow4_2,,Section III.  Assets and Liabilities,,10,text
+A Contingent Liabilities Check the line next to any contingent debts for which you believe you should be responsibleRow5_2,,Section III.  Assets and Liabilities,,10,text
+Check Box73,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box74,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box75,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box76,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box77,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box78,,Section III.  Assets and Liabilities,,10,checkbox
+hand delivered to the persons listed below on date,,Section III.  Assets and Liabilities,,10,text
+Name,,Section III.  Assets and Liabilities,,10,text
+Address_3,,Section III.  Assets and Liabilities,,10,text
+City State Zip,,Section III.  Assets and Liabilities,,10,text
+Fax Number,,Section III.  Assets and Liabilities,,10,text
+Email Addresses,,Section III.  Assets and Liabilities,,10,text
+Phone Number,,Section III.  Assets and Liabilities,,10,text
+Dated,,Section III.  Assets and Liabilities,,10,text
+Printed Name,,Section III.  Assets and Liabilities,,10,text
+Address_4,,Section III.  Assets and Liabilities,,10,text
+City State Zip_2,,Section III.  Assets and Liabilities,,10,text
+Fax Number_2,,Section III.  Assets and Liabilities,,10,text
+Email Addresses_2,,Section III.  Assets and Liabilities,,10,text
+Phone Number_2,,Section III.  Assets and Liabilities,,10,text
+Signature1,,Section III.  Assets and Liabilities,,10,text
+Check Box79,,Section III.  Assets and Liabilities,,10,checkbox
+Check Box80,,Section III.  Assets and Liabilities,,10,checkbox
+name of individual,,Section III.  Assets and Liabilities,,10,text
+name of business,,Section III.  Assets and Liabilities,,10,text
+address non lawyer,,Section III.  Assets and Liabilities,,10,text
+state nonlawyer,,Section III.  Assets and Liabilities,,10,text
+telephone number nonlawyer,,Section III.  Assets and Liabilities,,10,text
+city nonlawyer,,Section III.  Assets and Liabilities,,10,text

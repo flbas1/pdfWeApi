@@ -11,61 +11,61 @@ Occupation,Unemployed,Section I. Income,,4,text
 Check Box85,Yes,Section I. Income,Unemployment,4,checkbox
 you expect to receive 1,"seeking unemployment benefits, and seeking employment",Section I. Income,,4,text
 you expect to receive 2,"I expect to be employed within the next 3 months, with a pay of $120k, based on feedback I am receiving from other job seekers recent laid off",Section I. Income,,4,text
-Check Box86,Off,Section I. Income,,4,checkbox
+Check Box86,Off,Section I. Income,EmployedBy Checkbox,4,checkbox
 Employed by,,Section I. Income,,4,text
 Address,,Section I. Income,,4,text
 City State Zip code,,Section I. Income,,4,text
 Telephone Number,,Section I. Income,,4,text
-Pay rate,,Section I. Income,3b,4,text
-Check Box2,Off,Section I. Income,3b,4,checkbox
-Check Box3,Off,Section I. Income,3b,4,checkbox
-Check Box4,,Section I. Income,3b,4,checkbox
-Check Box5,,Section I. Income,3b,4,checkbox
-Check Box6,,Section I. Income,3b,4,checkbox
-other,,Section I. Income,3b,4,text
-expect and why and how it will affect your income 1,,Section I. Income,3b,4,text
-expect and why and how it will affect your income 2,,Section I. Income,3b,4,text
-Check Box87,,Section I. Income,3b - 2nd job,4,checkbox
-Check Box88,,Section I. Income,3b - retired,5,checkbox
-Retired  Date of retirement,,Section I. Income,3b - retired,5,text
-Employer from whom retired,,Section I. Income,3b - retired,5,text
-Address_2,,Section I. Income,3b - retired,5,text
-City State Zip code_2,,Section I. Income,3b - retired,5,text
-Telephone Number_2,,Section I. Income,3b - retired,5,text
-YEAR,???,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Your Income,0,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Other party's Income,,Section I. Income,"LAST YEAR’S GROSS INCOME: ",5,text
-Monthly gross salary or wages,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly disability benefits/SSI,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Workers’ Compensation,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Unemployment Compensation,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly pension, retirement, or annuity payments",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly Social Security benefits,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+Pay rate,,Section I. Income,,4,text
+Check Box2,Off,Section I. Income,Every Week,4,checkbox
+Check Box3,Off,Section I. Income,Every other Week,4,checkbox
+Check Box4,Off,Section I. Income,Twice a month,4,checkbox
+Check Box5,Off,Section I. Income,Monthly,4,checkbox
+Check Box6,Off,Section I. Income,Other,4,checkbox
+other,,Section I. Income,,4,text
+expect and why and how it will affect your income 1,1,Section I. Income,,4,text
+expect and why and how it will affect your income 2,2,Section I. Income,,4,text
+Check Box87,Off,Section I. Income,Check here if you currently have more than one job.,4,checkbox
+Check Box88,Off,Section I. Income,Check here if Retired,5,checkbox
+Retired  Date of retirement,,Section I. Income,,5,text
+Employer from whom retired,,Section I. Income,,5,text
+Address_2,,Section I. Income,,5,text
+City State Zip code_2,,Section I. Income,,5,text
+Telephone Number_2,,Section I. Income,,5,text
+YEAR,???,Section I. Income,,5,text
+Your Income,0,Section I. Income,,5,text
+Other party's Income,,Section I. Income,,5,text
+Monthly gross salary or wages,,Section I. Income,,5,text
+"Monthly bonuses, commissions, allowances, overtime, tips, and similar payments",,Section I. Income,,5,text
+Monthly disability benefits/SSI,,Section I. Income,,5,text
+Monthly Workers’ Compensation,,Section I. Income,,5,text
+Monthly Unemployment Compensation,,Section I. Income,,5,text
+"Monthly pension, retirement, or annuity payments",,Section I. Income,,5,text
+Monthly Social Security benefits,,Section I. Income,,5,text
 Monthly alimony actually received (Add 9a and 9b),0,Section I. Income,=== From this case Monthly alimony actually received + [From other case(s)Monthly alimony actually Received],5,text
-From this case Monthly alimony actually received,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-From other case(s)Monthly alimony actually Received,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly interest and dividends,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly rental income (gross receipts minus ordinary and necessary expenses required to produce income) (Attach sheet itemizing such income and expense items.),,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-"Monthly income from royalties, trusts, or estates",,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Monthly gains derived from dealing in property (not including nonrecurring gains),,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Any other income of a recurring nature,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source1,0 Severance package,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
-Source 2,,Section I. Income,PRESENT MONTHLY GROSS INCOME: 1,5,text
+From this case Monthly alimony actually received,,Section I. Income,,5,text
+From other case(s)Monthly alimony actually Received,,Section I. Income,,5,text
+Monthly interest and dividends,,Section I. Income,,5,text
+Monthly rental income (gross receipts minus ordinary and necessary expenses required to produce income) (Attach sheet itemizing such income and expense items.),,Section I. Income,,5,text
+"Monthly income from royalties, trusts, or estates",,Section I. Income,,5,text
+Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses,,Section I. Income,,5,text
+Monthly gains derived from dealing in property (not including nonrecurring gains),,Section I. Income,,5,text
+Any other income of a recurring nature,,Section I. Income,,5,text
+Source1,0 Severance package,Section I. Income,,5,text
+Source 2,,Section I. Income,,5,text
 TOTAL PRESENT MONTHLY GROSS INCOME,0,Section I. Income,"=== Monthly gross salary or wages  + Monthly bonuses, commissions, allowances, overtime, tips, and similar payments  + Monthly disability benefits/SSI  + Monthly Workers’ Compensation  + Monthly Unemployment Compensation  + Monthly pension, retirement, or annuity payments  + Monthly Social Security benefits  + [Monthly alimony actually received (Add 9a and 9b)]  +   Monthly interest and dividends  + Monthly income from royalties, trusts, or estates  + [Monthly reimbursed expenses and in-kind payments to the extent that they reduce personal living expenses]  + [Monthly gains derived from dealing in property (not including nonrecurring gains)]  + Any other income of a recurring nature + Source1 + Source 2",5,text
-"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-a Filing Status,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-b Number of dependents claimed,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly FICA or self-employment taxes,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,5,text
-Monthly Medicare payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly mandatory union dues,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly mandatory retirement payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly health insurance payments,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-Monthly court-ordered child support actually paid for children from another relationship,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+"Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)",,Section I. Income,,5,text
+a Filing Status,,Section I. Income,,5,text
+b Number of dependents claimed,,Section I. Income,,5,text
+Monthly FICA or self-employment taxes,,Section I. Income,,5,text
+Monthly Medicare payments,,Section I. Income,,6,text
+Monthly mandatory union dues,,Section I. Income,,6,text
+Monthly mandatory retirement payments,,Section I. Income,,6,text
+Monthly health insurance payments,,Section I. Income,,6,text
+Monthly court-ordered child support actually paid for children from another relationship,,Section I. Income,,6,text
 Monthly court-ordered alimony actually paid (Add 25a and 25b),0,Section I. Income,=== 25a from this case + 25b from other cases,6,text
-25a from this case,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
-25b from other cases,,Section I. Income,PRESENT MONTHLY DEDUCTIONS,6,text
+25a from this case,,Section I. Income,,6,text
+25b from other cases,,Section I. Income,,6,text
 "TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30, FLORIDA STATUTES (Add lines 18 through 25)",0,Section I. Income,"=== [Monthly federal, state, and local income tax (corrected for filing status and allowable dependents and income tax liabilities)] +  a Filing Status + b Number of dependents claimed + [Monthly FICA or self-employment taxes] + Monthly Medicare payments + Monthly mandatory union dues + Monthly mandatory retirement payments + Monthly health insurance payments + [Monthly court-ordered child support actually paid for children from another relationship] + [Monthly court-ordered alimony actually paid (Add 25a and 25b)]",6,text
 PRESENT NET MONTHLY INCOME (Subtract line 26 from line 17),0,Section I. Income,"=== [TOTAL DEDUCTIONS ALLOWABLE UNDER SECTION 61.30, FLORIDA STATUTES (Add lines 18 through 25)] - TOTAL PRESENT MONTHLY GROSS INCOME",6,text
 Mortgage,3364,Section II. Average Monthly Expenses,,6,text
