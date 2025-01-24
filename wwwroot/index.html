@@ -63,19 +63,41 @@
                 $("#updatePdf").button();
             });
 
-            $.ajax({
-                url: "/data?csvFilePath=fullValues.csv",
-                method: "GET",
-                contentType: 'application/json'
-            }).done(function (data) {
+            // $.ajax({
+            //     url: "/data?csvFilePath=fields.csv",
+            //     method: "GET",
+            //     contentType: 'application/json'
+            // }).done(function (data) {
+
+
+            $.when(
+                $.ajax({
+                    url: "/data?csvFilePath=fields.csv",
+                    method: "GET",
+                    contentType: 'application/json'
+                }),
+                $.ajax({
+                    url: "/data?csvFilePath=values.csv",
+                    method: "GET",
+                    contentType: 'application/json'
+                })
+            ).done(function (fieldsResponse, valuesResponse) {
+                var fieldsData = fieldsResponse[0];
+                var valuesData = valuesResponse[0];
+
+                // Create a dictionary from values.csv
+                var valuesDict = {};
+                valuesData.forEach(function (item) {
+                    valuesDict[item.Field] = item.Value;
+                });
                 var groupedData = {};
 
                 // Group data by section
-                data.forEach(function (item) {
-                    if (!groupedData[item.section]) {
-                        groupedData[item.section] = [];
+                fieldsData.forEach(function (item) {
+                    if (!groupedData[item.Section]) {
+                        groupedData[item.Section] = [];
                     }
-                    groupedData[item.section].push(item);
+                    groupedData[item.Section].push(item);
                 });
 
                 // Create accordion structure
@@ -88,20 +110,24 @@
                     var table = $('<table></table>');
                     sectionData.forEach(function (item) {
                         var row = $('<tr></tr>');
-                        row.append('<td>' + item.field + '</td>');
+                        //row.append('<td>' + item.field + '</td>');
 
+                        fieldName = item.Notes != '' && !item.Notes.startsWith("===") ? item.Notes : item.Field;
                         checked = (item.dataType === "checkbox" && item.value === 'Yes') ? 'checked' : '';
-                        readOnly = (!item.notes.startsWith('===')) ? '' : `readonly  data-notes="${item.notes}" `;
+                        readOnly = (!item.Notes.startsWith('===')) ? '' : `readonly  data-notes="${item.Notes}" `;
+
+                        //row.append(`<td><input type='text' class='edit-value' value='${fieldName}' placeholder='${item.field}'   /></td>`);
+                        row.append(`<td>${fieldName}</td>`);
 
                         row.append(`
                             <td>
                                 <input 
-                                    type="${item.dataType}" 
+                                    type="${item.DataType}" 
                                     class="edit-value" 
-                                    value="${item.value}" 
-                                    data-field="${item.field}" 
-                                    data-section="${item.section}" 
-                                    data-pdfpage="${item.pdfPage}" 
+                                    value="${valuesDict[item.Field]}" 
+                                    data-field="${item.Field}" 
+                                    data-section="${item.Section}" 
+                                    data-pdfpage="${item.PdfPage}" 
                                     ${checked}
                                     ${readOnly}
                                 />
@@ -147,15 +173,6 @@
 
                     UpdateCsvValue(field, newValue);
 
-                    // // Send updated data to the server
-                    // $.ajax({
-                    //     url: "/data?csvFilePath=fullValues.csv",
-                    //     method: "POST",
-                    //     contentType: 'application/json',
-                    //     data: JSON.stringify(updatedData)
-                    // }).done(function () {
-                    //     console.log('Data updated successfully');
-
                     autoUpdatePdf = $('#autoUpdatePdf').is(':checked');
                     if (!autoUpdatePdf) {
                         console.log("not autoUpdatePdf");
@@ -181,8 +198,7 @@
                         newPdfObject.type = 'application/pdf';
                         newPdfObject.width = '100%';
                         newPdfObject.height = '100%';
-                        newPdfObject.data = `/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime(); // Update with the correct path
-                        console.log(`/902c10-21_filled.pdf#page=${pdfPage}?t=` + new Date().getTime());
+                        newPdfObject.data = `/902c10-21_filled.pdf#page=${pdfPage}`; // Update with the correct path
                         pdfContainer.appendChild(newPdfObject);
 
                     }).fail(function () {
@@ -221,7 +237,7 @@
 
             // Send updated data to the server
             $.ajax({
-                url: "/data?csvFilePath=fullValues.csv",
+                url: "/data?csvFilePath=Values.csv",
                 method: "POST",
                 contentType: 'application/json',
                 data: JSON.stringify(updatedData)
@@ -252,8 +268,8 @@
                             } else if (!isNaN(part)) { return part; }
                             else {
                                 var x = getValue(part) || 0;
-                                x=parseFloat(x);
-                                if (isNaN(x)) { x=0 }
+                                x = parseFloat(x);
+                                if (isNaN(x)) { x = 0 }
                                 console.log(`${part}: ${x}`);
                                 return x;
                             }
@@ -279,7 +295,7 @@
                     if (part.startsWith('[') && part.endsWith(']')) {  //need to remove extra ( ) if it has it
                         part = part.substring(1, part.length - 1);
                     }
-                                            
+
                     try {
                         return $('.edit-value').filter(function () {
                             var field = $(this).data('field');
@@ -293,7 +309,7 @@
                 }
 
             });
-           return true;
+            return true;
         }
     </script>
 </body>

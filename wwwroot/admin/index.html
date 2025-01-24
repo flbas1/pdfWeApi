@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Data Table</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .accordion-section {
+            margin-bottom: 10px;
+        }
+
+        .accordion-content {
+            display: none;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #pdf-container {
+            width: 50%;
+            height: 100%;
+        }
+
+        #myTable-container {
+            width: 50%;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .edit-input {
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="accordion-container">
+        <button class="ui-button ui-widget ui-corner-all" id="updatePdf">Update PDF</button>
+
+        <label for="autoUpdatePdf">AutoUpdate PDF</label>
+        <input type="checkbox" name="autoUpdatePdf" id="autoUpdatePdf" checked="checked" />
+
+        <br /><br />
+        <div id="accordion"></div>
+    </div>
+    <div id="container">
+        <div id="myTable-container">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Section</th>
+                        <th>Notes</th>
+                        <th>Pdf Page</th>
+                        <th>Data Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div id="pdf-container">
+            <object id="pdf-object" type="application/pdf" width="100%" height="100%"></object>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            var pdfObject = document.getElementById('pdf-object');
+            pdfObject.data = `/902c10-21_filled.pdf#page=${4}`;
+
+            $.ajax({
+                url: "/data?csvFilePath=fields.csv",
+                method: "GET",
+                contentType: 'application/json'
+            }).done(function (data) {
+                // Populate the table with JSON data
+                var tbody = $('#myTable tbody');
+                data.forEach(function (item, index) {
+                    var row = `<tr>
+                        <td>${item.Field}</td>
+                        <td>${item.Section}</td>
+                        <td>${item.Notes}</td>
+                        <td>${item.PdfPage}</td>
+                        <td>${item.DataType}</td>
+                    </tr>`;
+                    tbody.append(row);
+                });
+
+                // Make the table rows sortable
+                tbody.sortable({
+                    update: function (event, ui) {
+                        var updatedData = [];
+                        $('#myTable tbody tr').each(function (index, row) {
+                            var cells = $(row).children('td');
+                            updatedData.push({
+                                Field: $(cells[0]).text(),
+                                Section: $(cells[1]).text(),
+                                Notes: $(cells[2]).text(),
+                                PdfPage: $(cells[3]).text(),
+                                DataType: $(cells[4]).text()
+                            });
+                        });
+                        sendDataToServer(updatedData);
+                    }
+                });
+
+                // Enable inline editing
+                $('#myTable tbody').on('click', 'td', function () {
+                    var cell = $(this);
+                    var originalValue = cell.text();
+                    var input = $(`<input type="text" class="edit-input" value="${originalValue}" />`);
+                    cell.html(input);
+
+                    input.focus().on('blur', function () {
+                        var newValue = $(this).val();
+                        cell.text(newValue);
+
+                        var row = cell.closest('tr');
+                        var rowData = {
+                            Field: row.find('td:eq(0)').text(),
+                            Section: row.find('td:eq(1)').text(),
+                            Notes: row.find('td:eq(2)').text(),
+                            PdfPage: row.find('td:eq(3)').text(),
+                            DataType: row.find('td:eq(4)').text()
+                        };
+                        sendDataToServer([rowData]); // Send the updated row to the server
+                    });
+                });
+
+                // Function to send the entire dataset to the server
+                function sendDataToServer(allData) {
+                    $.ajax({
+                        url: "/data?csvFilePath=fields.csv",
+                        method: "POST",
+                        contentType: 'application/json',
+                        data: JSON.stringify(allData)
+                    }).done(function () {
+                        console.log('Data updated successfully');
+                    }).fail(function () {
+                        console.log('Failed to update data');
+                    });
+                }
+            }).fail(function () {
+                console.log('Failed to load data');
+            });
+        });
+    </script>
+</body>
+
+</html>
